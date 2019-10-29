@@ -1,0 +1,12 @@
+.form-control-feedback {
+    color: red;
+}
+.note-editor, .note-toolbar, .note-editor .note-editing-area {
+    position: static;
+}
+.pn-pointer {
+    cursor: pointer;
+}
+.display_fex_col{
+    display: flex;
+}
