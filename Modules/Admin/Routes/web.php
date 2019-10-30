@@ -44,8 +44,14 @@ Route::group(
             //        Route::get('/about-us/{page_alias}', 'AboutUsController@detail')->name('admin.about-us.detail');
                     Route::get('/about-us/company', 'AboutUsController@detailcompany')
                         ->name('admin.about-us.detail.tpcloud');
-                    Route::get('/about-us/our-technology', 'AboutUsController@detailOurTechnology')
+                    Route::get('/about-us/business', 'AboutUsController@detailOurTechnology')
                         ->name('admin.about-us.detail.our-technology');
+                    Route::get('/about-us/solution-list-page', 'AboutUsController@detailsolotioncate')
+                        ->name('admin.about-us.detail.solution-list-page');
+                    Route::get('/about-us/works-list-page', 'AboutUsController@detailwork')
+                        ->name('admin.about-us.detail.works-list-page');
+                    Route::get('/about-us/maintenance-list-page', 'AboutUsController@detailmaintenance')
+                        ->name('admin.about-us.detail.maintenance-list-page');
             //        Route::get('/partner/{page_alias}', 'PartnerController@detail')->name('admin.partner.detail');
                     Route::get('/partner/partner', 'PartnerController@detailPartner')
                         ->name('admin.partner.detail.partner');

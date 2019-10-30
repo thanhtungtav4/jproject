@@ -170,7 +170,7 @@ class AboutUsController extends BaseController
             'page_id' => 2
         ];
         $arrPage = $this->repoPage->getCurrentPage($filter);
-
+        //dd($arrPage);
         return view('frontend::company.profile', [
             'page'  => $arrPage
         ]);

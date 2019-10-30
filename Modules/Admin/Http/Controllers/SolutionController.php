@@ -16,7 +16,7 @@ class SolutionController extends Controller
     public function index()
     {
 //        $id = $this->page->getIdPage('home', 'home');
-        $page_id = 41;
+        $page_id = 1;
         $category = 1;
         $page = 'solution-list';
         $page_type = 'solution-list';

@@ -40,8 +40,8 @@
                     <div class="form-group">
                         <div class="row">
                             <div class="col-2">
-                                <a href="{{route('admin.map',['page_id' => $page_id, 'plugin_type' => 'business_outline'])}}" class="btn btn-label-brand btn-bold">@lang('admin::about-us.index.cau_hinh')</a>
-                                <a href="{{route('admin.map',['page_id' => $page_id, 'plugin_type' => 'business_outline','action'=>'xem'])}}" class="btn btn-label-brand btn-bold">Xem</a>
+                                <a href="{{route('admin.map',['page_id' => $page_id, 'plugin_type' => 'solution_list_page'])}}" class="btn btn-label-brand btn-bold">@lang('admin::about-us.index.cau_hinh')</a>
+                                <a href="{{route('admin.map',['page_id' => $page_id, 'plugin_type' => 'solution_list_page','action'=>'xem'])}}" class="btn btn-label-brand btn-bold">Xem</a>
                             </div>
                             <div class="col-10">
                                 <h3>@lang('admin::about-us.index.block_content')</h3>
