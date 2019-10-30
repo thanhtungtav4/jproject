@@ -192,6 +192,69 @@ class AboutUsController extends BaseController
         ]);
     }
     /**
+     * Trang Solution_cat  Doanh mục solution
+     *
+     * @return Response
+     */
+    public function solution_cat()
+    {
+        $filter = [
+            'page_id' => 7
+        ];
+        $arrPage = $this->repoPage->getCurrentPage($filter);
+
+        return view('frontend::company.solution_cat', [
+            'page'  => $arrPage
+        ]);
+    }
+
+    /**
+     * Trang solution
+     *
+     * @return Response
+     */
+    public function solution()
+    {
+        $filter = [
+            'page_id' => 13
+        ];
+        $arrPage = $this->repoPage->getCurrentPage($filter);
+
+        return view('frontend::company.solution', [
+            'page'  => $arrPage
+        ]);
+    }
+
+    public function works()
+    {
+        $filter = [
+            'page_id' => 24
+        ];
+        $arrPage = $this->repoPage->getCurrentPage($filter);
+
+        return view('frontend::company.works', [
+            'page'  => $arrPage
+        ]);
+    }
+
+    /**
+     * Trang maintenance
+     *
+     * @return Response
+     */
+    public function maintenance()
+    {
+        $filter = [
+            'page_id' => 25
+        ];
+        $arrPage = $this->repoPage->getCurrentPage($filter);
+
+        return view('frontend::company.maintenance', [
+            'page'  => $arrPage
+        ]);
+    }
+
+    /**
      * Xử lý gửi liên hệ
      *
      * @param ContactRequest $request

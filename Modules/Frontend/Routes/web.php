@@ -29,7 +29,7 @@ Route::group(['middleware' => ['locale']], function () {
         Route::get('doanh-nghịep', 'AboutUsController@business')->name('frontend.business_vi');
         // !Business outline
         // solution-cat
-        Route::get('nhom-giai-phap', 'AboutUsController@solution-cat')->name('frontend.solution-cat_vi');
+        Route::get('nhom-giai-phap', 'AboutUsController@solution_cat')->name('frontend.solution-cat_vi');
         // !solution-cat
         // solution
         Route::get('giai-phap', 'AboutUsController@solution')->name('frontend.solution_vi');
@@ -37,6 +37,9 @@ Route::group(['middleware' => ['locale']], function () {
         // maintenance
         Route::get('bao-tri', 'AboutUsController@maintenance')->name('frontend.maintenance_vi');
         // !maintenance
+        // works
+        Route::get('du-an', 'AboutUsController@works')->name('frontend.works_vi');
+        // !works
         //Liên hệ
         Route::get('lien-he-chung-toi', 'AboutUsController@contact')->name('frontend.about.contact_vi');
         Route::post('lien-he-chung-toi', 'AboutUsController@submitContact')->name('frontend.about.contact_vi');
@@ -72,7 +75,7 @@ Route::group(['middleware' => ['locale']], function () {
         Route::get('business', 'AboutUsController@business')->name('frontend.business_en');
         // !Business outline
         // solution-cat
-        Route::get('solution-cat', 'AboutUsController@solution-cat')->name('frontend.solution-cat_en');
+        Route::get('solution-cat', 'AboutUsController@solution_cat')->name('frontend.solution-cat_en');
         // !solution-cat
         // solution
         Route::get('solution', 'AboutUsController@solution')->name('frontend.solution_en');
@@ -80,6 +83,9 @@ Route::group(['middleware' => ['locale']], function () {
         // maintenance
         Route::get('maintenance', 'AboutUsController@maintenance')->name('frontend.maintenance_en');
         // !maintenance
+        // works
+        Route::get('works', 'AboutUsController@works')->name('frontend.works_en');
+        // !works
         //Liên hệ
         Route::get('contact-us', 'AboutUsController@contact')->name('frontend.about.contact_en');
         Route::post('contact-us', 'AboutUsController@submitContact')->name('frontend.about.contact_en');

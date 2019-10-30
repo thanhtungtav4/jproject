@@ -2259,6 +2259,20 @@ a:hover , .read_more:hover p , .footer_box_ul li:hover a{
     width: fit-content;
     margin: auto;
 }
+#tAfterMainteEn {
+    height: 45px;
+    margin-bottom: 16px;
+    padding-left: 60px;
+    background: url(../images/icon-business/ic_after.gif) no-repeat 0 0;
+}
+.tCenter{
+    text-align: center;
+    margin:0 auto;
+}
+.figure img{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
 label {
     font-family: Roboto;
     font-style: normal;
@@ -2284,6 +2298,30 @@ header .nav-link {
     width: 52px;
     height: 52px;
     border-radius: 50%;
+}
+.h2 {
+    margin-bottom: 20px;
+    padding: 4px 10px 0;
+    background-color: #00afe9;
+    color: #fff;
+    zoom: 1;
+}
+.copyMainEn {
+    margin-bottom: 18px;
+    color: #2153a0;
+    font-family: Georgia, Times New Roman, serif;
+    font-weight: normal;
+}
+#colNum01 {
+    color: #E87690;
+}
+#naiyo li {
+    font-weight: bold;
+}
+#naiyo li li {
+    list-style: disc;
+    color: #000;
+    font-weight: normal;
 }
 .lang{
     padding: 1px 6px;

@@ -100,6 +100,12 @@
                 scrollTop : 0                       // Scroll to top of body
             }, 500);
         });
+
+        $(document).ready(function () {
+            var hash = window.location.hash;
+            $( 'ul.nav a[href="' + hash + '"]' ).click();
+        })
+
     </script>
         <!-- move top -->
         @yield('after_script')
