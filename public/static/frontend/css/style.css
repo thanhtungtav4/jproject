@@ -1673,6 +1673,9 @@ ul.blog-icons i {
     font-weight: 600;
     margin-top: 0em;
 }
+.toggle {
+    color: #ff0000;
+}
 .tech-btm h5 a{
    color:#333;
 }
