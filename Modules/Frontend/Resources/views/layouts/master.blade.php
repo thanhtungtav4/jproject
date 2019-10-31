@@ -63,8 +63,9 @@
                             {{--<span class="btn_seach"></span>--}}
                         {{--</li>--}}
                         @foreach(Config::get('app.locales') as $locale)
+
                         <li class="lang">
-                            <a hreflang="{{$locale}}" href="{{route('frontend.index.change-locale', ['locale' => $locale])}}"> <span class="@if(Config::get('app.locale') == $locale) active @endif ">{{$locale}}</span></a>
+                            <a hreflang="{{$locale}}" href="{{route('frontend.index.change-locale', ['locale' => $locale])}}"> <span class="@if(Config::get('app.locale') == $locale) active @endif ">@if($locale == 'vi') VN @else EN  @endif</span></a>
                         </li>
                         @endforeach
                     </ul>

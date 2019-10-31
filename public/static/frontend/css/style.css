@@ -239,7 +239,7 @@ h4{
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
-    padding: 4rem;
+    padding: 4rem 4rem 0 4rem;
     position: relative;
 }
 .text_banner{
@@ -1679,6 +1679,9 @@ ul.blog-icons i {
 .tech-btm h5 a{
    color:#333;
 }
+.mgBM img{
+    width: 100%;
+}
 .sub-meta span {
     font-size: 0.8em;
     color: #a9abad;
@@ -2218,39 +2221,39 @@ a:hover , .read_more:hover p , .footer_box_ul li:hover a{
 }
 
 #icBusiness01{
-    border-bottom: 2px solid #65dbdf;
+
     background: url(../images/icon-business/ic_business_01.gif) no-repeat 5px 5px;
 }
 #icBusiness02{
-    border-bottom: 2px solid #65dbdf;
+
     background: url(../images/icon-business/ic_business_02.gif) no-repeat 5px 5px;
 }
 #icBusiness03{
-    border-bottom: 2px solid #65dbdf;
+
     background: url(../images/icon-business/ic_business_03.gif) no-repeat 5px 5px;
 }
 #icBusiness04{
-    border-bottom: 2px solid #65dbdf;
+
     background: url(../images/icon-business/ic_business_04.gif) no-repeat 5px 5px;
 }
 #icBusiness05{
-    border-bottom: 2px solid #65dbdf;
+
     background: url(../images/icon-business/ic_business_05.gif) no-repeat 5px 5px;
 }
 #icBusiness06{
-    border-bottom: 2px solid #65dbdf;
+
     background: url(../images/icon-business/ic_business_06.gif) no-repeat 5px 5px;
 }
 #icBusiness07{
-    border-bottom: 2px solid #65dbdf;
+
     background: url(../images/icon-business/ic_business_07.gif) no-repeat 5px 5px;
 }
 #icBusiness08{
-    border-bottom: 2px solid #65dbdf;
+
     background: url(../images/icon-business/ic_business_08.gif) no-repeat 5px 5px;
 }
 #icBusiness09{
-    border-bottom: 2px solid #65dbdf;
+
     background: url(../images/icon-business/ic_business_09.gif) no-repeat 5px 5px;
 }
 .business_box ul{
@@ -2659,7 +2662,10 @@ div#carousel-example-1z {
     }
 }
 @media screen and (min-width: 992px) {
-
+    .business_box h4 {
+        font-size: 24px;
+        line-height: 44px;
+    }
 }
 @media screen and (max-width: 1024px) {
 
@@ -2676,6 +2682,10 @@ div#carousel-example-1z {
     }
     .col-md-2 .from_contact {
         font-size: 21px;
+    }
+    .business_box h4 {
+        font-size: 18px;
+        line-height: 24px;
     }
 }
 @media screen and (max-width: 768px) {
