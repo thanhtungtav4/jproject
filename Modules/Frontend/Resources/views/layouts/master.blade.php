@@ -11,6 +11,7 @@
     <link href="{{asset('static/frontend')}}/css/css_slider.css" type="text/css" rel="stylesheet" media="all"><!-- slider css -->
     <link href="{{asset('static/frontend')}}/css/bootstrap.css" rel='stylesheet' type='text/css' /><!-- bootstrap css -->
     <link href="{{asset('static/frontend')}}/css/style.css" rel='stylesheet' type='text/css' /><!-- custom css -->
+    <link href="{{asset('static/frontend')}}/css/style_fix.css" rel='stylesheet' type='text/css' /><!-- custom css -->
     <link href="{{asset('static/frontend')}}/css/font-awesome.min.css" rel="stylesheet"><!-- fontawesome css -->
     <link href="{{asset('static/frontend')}}/css/ekko-lightbox.css" rel='stylesheet' type='text/css' />
     <!-- //css files -->
@@ -78,6 +79,7 @@
         @include('frontend::inc.footer')
         <script src="{{asset('static/frontend')}}/js/jquery.js"></script>
         <script src="{{asset('static/frontend')}}/js/bootstrap.js"></script>
+        <script src="{{asset('static/frontend')}}/js/js_fix.js"></script>
          {{--<script src="{{asset('static/frontend')}}/js/ekko-lightbox.js"></script>--}}
          {{--<script src="{{asset('static/frontend')}}/js/ekko-lightbox.js.map"></script>--}}
         <!-- Portfolio Modals -->

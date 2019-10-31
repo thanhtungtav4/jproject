@@ -1,0 +1,43 @@
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+@media all and (max-width : 991px) {
+    .menu {
+        position: fixed;
+        right: 0;
+        width: 90% !important;
+        height: 100%;
+        top: 10%;
+    }
+    .menu li {
+        text-align: left;
+        border-bottom: 1px solid #e9ecef;
+        padding: 1rem 1.5rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .menu li a {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 12px;
+    }
+    .menu li a:after {
+        float: right;
+        color: red;
+    }
+    li .dropdown-menu {
+        padding-top: 10px;
+        position: relative !important;
+        transform: none !important;
+        border: none;
+        width: 100%;
+        border-top: 1px solid #e9ecef;
+        overflow: hidden;
+        margin-top: 10px;
+    }
+}
+@media all and (max-width : 320px) {
+    .menu {
+        top: 13%;
+    }
+}
