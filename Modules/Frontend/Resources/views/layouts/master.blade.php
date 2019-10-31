@@ -12,6 +12,7 @@
     <link href="{{asset('static/frontend')}}/css/bootstrap.css" rel='stylesheet' type='text/css' /><!-- bootstrap css -->
     <link href="{{asset('static/frontend')}}/css/style.css" rel='stylesheet' type='text/css' /><!-- custom css -->
     <link href="{{asset('static/frontend')}}/css/font-awesome.min.css" rel="stylesheet"><!-- fontawesome css -->
+    <link href="{{asset('static/frontend')}}/css/ekko-lightbox.css" rel='stylesheet' type='text/css' />
     <!-- //css files -->
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
@@ -77,6 +78,8 @@
         @include('frontend::inc.footer')
         <script src="{{asset('static/frontend')}}/js/jquery.js"></script>
         <script src="{{asset('static/frontend')}}/js/bootstrap.js"></script>
+         <script src="{{asset('static/frontend')}}/js/ekko-lightbox.js"></script>
+         <script src="{{asset('static/frontend')}}/js/ekko-lightbox.js.map"></script>
         <!-- Portfolio Modals -->
         <!-- Modal 1 -->
         <div id="my-modal">
@@ -105,7 +108,10 @@
             var hash = window.location.hash;
             $( 'ul.nav a[href="' + hash + '"]' ).click();
         })
-
+        $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
     </script>
         <!-- move top -->
         @yield('after_script')
