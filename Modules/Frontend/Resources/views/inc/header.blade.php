@@ -25,7 +25,7 @@
                     </li>
                     <li class=""><a href="{{route('frontend.business_'.Config::get('app.locale'))}}">@lang('frontend::index.business_outline')</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="Solution" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="{{route('frontend.solution-cat_'.Config::get('app.locale'))}}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             @lang('frontend::index.solution')
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -50,9 +50,9 @@
                             @lang('frontend::index.maintenance')
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="{{route('frontend.maintenance_'.Config::get('app.locale'))}}">@lang('frontend::index.contract_details')</a>
+                            <a class="dropdown-item" href="{{route('frontend.maintenance_'.Config::get('app.locale'))}}#contractdetails">@lang('frontend::index.contract_details')</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="{{route('frontend.maintenance_'.Config::get('app.locale'))}}">@lang('frontend::index.contract_process_flow')</a>
+                            <a class="dropdown-item" href="{{route('frontend.maintenance_'.Config::get('app.locale'))}}#contractprocessflow">@lang('frontend::index.contract_process_flow')</a>
                         </div>
                     </li>
                     <li class=""><a href="{{route('frontend.about.contact_'.Config::get('app.locale'))}}">@lang('frontend::index.inquiries')</a></li>
