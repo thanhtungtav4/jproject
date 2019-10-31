@@ -29,17 +29,17 @@
                             @lang('frontend::index.solution')
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="Air Conditioning / Water Supply / Drainage Systems">@lang('frontend::index.air_conditioning')</a>
+                            <a class="dropdown-item" href="{{route('frontend.solution_'.Config::get('app.locale'))}}#tab_43">@lang('frontend::index.air_conditioning')</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="Energy Saving">@lang('frontend::index.energy_saving')</a>
+                            <a class="dropdown-item" href="{{route('frontend.solution_'.Config::get('app.locale'))}}#tab_44">@lang('frontend::index.energy_saving')</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="Energy Saving Air Conditioning System RiCS">@lang('frontend::index.system_riCS')</a>
+                            <a class="dropdown-item" href="{{route('frontend.solution_'.Config::get('app.locale'))}}#tab_45">@lang('frontend::index.system_riCS')</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="Plant Factory">@lang('frontend::index.factory')</a>
+                            <a class="dropdown-item" href="{{route('frontend.solution_'.Config::get('app.locale'))}}#tab_51">@lang('frontend::index.factory')</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="Renewable Energy">@lang('frontend::index.renewable_energy')</a>
+                            <a class="dropdown-item" href="{{route('frontend.solution_'.Config::get('app.locale'))}}#tab_53">@lang('frontend::index.renewable_energy')</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="Energy Service Company (ESCO) Business">@lang('frontend::index.service_company')</a>
+                            <a class="dropdown-item" href="{{route('frontend.solution_'.Config::get('app.locale'))}}#tab_52">@lang('frontend::index.service_company')</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="Facility/Equipment Renewal">@lang('frontend::index.equipment_renewal')</a>
                         </div>

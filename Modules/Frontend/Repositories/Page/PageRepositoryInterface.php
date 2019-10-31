@@ -14,6 +14,8 @@ interface PageRepositoryInterface
 
     public function getCurrentPage(array $filters = []);
 
+
+
     /**
      * Lấy thông tin trang hiện tại theo alias
      *
@@ -21,4 +23,6 @@ interface PageRepositoryInterface
      * @return mixed
      */
     public function getCurrentPageByAlias(array $filters);
+
+    public function getSolutionList($filter);
 }

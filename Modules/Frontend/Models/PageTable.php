@@ -39,4 +39,10 @@ class PageTable extends BaseModel
 
         return $this->makeResult($oSelect);
     }
+
+    public function getListSolution($id)
+    {
+        $oSelect = $this->whereIn('page_id',$id)->get();
+        return $oSelect;
+    }
 }

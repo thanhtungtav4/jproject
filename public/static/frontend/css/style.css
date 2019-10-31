@@ -67,7 +67,8 @@ body a {
 .top-head-icon{
     display: inline-flex;
     float: right;
-    height: 20px;
+    height: 17px;
+    margin-top: 5px;
 }
 .header-top li{
     background: #000000;
@@ -2646,6 +2647,9 @@ h4 {
     background-color: #F2F2F2;
     border: 1px solid #E0E0E0;
 }
+div#carousel-example-1z {
+    width: 100%;
+}
 @media (min-width: 500px) {
     #button {
         margin: 30px;
@@ -2696,6 +2700,15 @@ h4 {
     }
     .footer_box {
         text-align: center;
+    }
+    .banner_sub .txt_h1 h1{
+        font-size: 1.5rem;
+    }
+    .banner_sub {
+        height: 30vh;
+    }
+    .txt_h1 {
+        top: 60%;
     }
 }
 @media screen and (max-width: 600px) {

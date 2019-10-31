@@ -215,13 +215,11 @@ class AboutUsController extends BaseController
      */
     public function solution()
     {
-        $filter = [
-            'page_id' => 13
-        ];
-        $arrPage = $this->repoPage->getCurrentPage($filter);
-
-        return view('frontend::company.solution', [
-            'page'  => $arrPage
+        $page_type['page_type'] = 'solution-list';
+        $id = [43,44,45,46,47,48,49,50,51,52,53];
+        $list = $this->repoPage->getSolutionList($id);
+        return view('frontend::solution.solution-list', [
+            'page'  => $list,
         ]);
     }
 
