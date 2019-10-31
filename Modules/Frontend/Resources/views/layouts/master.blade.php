@@ -78,8 +78,8 @@
         @include('frontend::inc.footer')
         <script src="{{asset('static/frontend')}}/js/jquery.js"></script>
         <script src="{{asset('static/frontend')}}/js/bootstrap.js"></script>
-         <script src="{{asset('static/frontend')}}/js/ekko-lightbox.js"></script>
-         <script src="{{asset('static/frontend')}}/js/ekko-lightbox.js.map"></script>
+         {{--<script src="{{asset('static/frontend')}}/js/ekko-lightbox.js"></script>--}}
+         {{--<script src="{{asset('static/frontend')}}/js/ekko-lightbox.js.map"></script>--}}
         <!-- Portfolio Modals -->
         <!-- Modal 1 -->
         <div id="my-modal">
@@ -108,10 +108,11 @@
             var hash = window.location.hash;
             $( 'ul.nav a[href="' + hash + '"]' ).click();
         })
-        $(document).on('click', '[data-toggle="lightbox"]', function(event) {
-            event.preventDefault();
-            $(this).ekkoLightbox();
-        });
+        // show is solution
+        // $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+        //     event.preventDefault();
+        //     $(this).ekkoLightbox();
+        // });
     </script>
         <!-- move top -->
         @yield('after_script')

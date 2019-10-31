@@ -1,7 +1,7 @@
 <header>
     <div class="container">
         <div id="logo">
-            <h1> <a href="#"><img src="{{asset($dataShareConfig['logo'][getValueByLang('')])}}" alt="Ryoki"></a></h1>
+            <h1> <a href="{{route('frontend.home_'.Config::get('app.locale'))}}"><img src="{{asset($dataShareConfig['logo'][getValueByLang('')])}}" alt="Ryoki"></a></h1>
         </div>
         <!-- nav -->
         <nav class="d-lg-flex">
