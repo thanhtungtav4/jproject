@@ -1,5 +1,5 @@
 <?php
-
+//die(3232);
 /**
  * Laravel - A PHP Framework For Web Artisans
  *

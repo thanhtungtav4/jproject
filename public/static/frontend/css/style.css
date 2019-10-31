@@ -2337,6 +2337,315 @@ header .nav-link {
 .btn_contact:hover{
     background: rgba(0, 0, 0, 0.9);
 }
+
+/*tungnt*/
+#colNum01 {
+    color: #E87690;
+}
+#blue_color{
+    color: #1A25BD;
+}
+#numberx {
+    border: 1px solid #1A25BD;
+    background: #1A25BD;
+}
+#naiyo li {
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+    margin-bottom: 11px;
+}
+.h3 {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.img_box{
+    margin: 20px auto;
+    text-align: center;
+}
+.item_box{
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+}
+#naiyo li li {
+    /* list-style: disc;*/
+    color: #000;
+    font-weight: normal;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+.copyMainEn {
+    margin-bottom: 18px;
+    color: #2153a0;
+    font-family: Georgia, Times New Roman, serif;
+    font-weight: normal;
+}
+#number01 {
+    border: 1px solid #E87690;
+    background: #E87690;
+}
+.item_box .step h6{
+    height: 40px;
+    background: #1DB0E7;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+.item_box .content_box{
+    padding: 10px;
+    height: 160px;
+}
+#colNum02 {
+    color: #E16354;
+}
+#number02 {
+    border: 1px solid #E16354;
+    background: #E16354;
+}
+#colNum03 {
+    color: #11B497;
+}
+#number03 {
+    border: 1px solid #11B497;
+    background: #11B497;
+}
+.txtNaiyoEn {
+    margin-left: 3.5em;
+    font-size: 1.3rem;
+}
+.number {
+    margin-right: 8px;
+    padding: 0 24px;
+    vertical-align: middle;
+    color: #ffff;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    align-items: center;
+    text-align: center;
+}
+.list{
+    list-style: none;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+.child-nav::before{
+    content: url('../images/icon-business/next.png');
+    margin-right: 10px;
+}
+.list li{
+    padding-left: 1.5em;
+}
+.carousel .carousel-indicators li {
+    width: .625rem;
+    height: .625rem;
+    cursor: pointer;
+    border-radius: 50%;
+}
+#imgRicsTop {
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 24px;
+}
+.carousel-indicators {
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    margin-left: 0;
+    justify-content: flex-start;
+    z-index: 1;
+}
+
+.list li:before {
+    position: absolute;
+    content: url('../images/icon-business/ellipse.png');
+    color: red;
+    left: 0;
+}
+.h3_tittle{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 20px;
+}
+.works_box{
+    max-width: 900px;
+}
+#naiyo ul {
+    margin-top: 0.6em;
+    margin-bottom: 1em;
+}
+.works_h4{
+    padding-left: 10px;
+}
+.container_tittle h5{
+    margin-top: 19px;
+    color: black;
+}
+#colNum04 {
+    color: #707DC1;
+}
+#number04 {
+    border: 1px solid #707DC1;
+    background: #707DC1;
+}
+.padding_section{
+    padding: 30px 0;
+}
+.padding_section .col-sm-6{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.list {
+    /* list-style: disc; */
+    margin-left: 0.8em;
+    line-height: 1.5;
+}
+.areaListHalf li {
+    float: left;
+    width: 50%;
+}
+#listMerit span {
+    margin-right: 8px;
+    padding: 2px 7px;
+    background-color: #00afe9;
+    color: #FFF;
+}
+
+#bgRenewalKouka01 {
+    width: 300px;
+    margin: 0 auto;
+    padding: 12px 14px 5px;
+    background-color: #E5F7FD;
+}
+#bgRenewalKouka02 {
+    padding: 12px 14px;
+    background-color: #FFF1F1;
+    min-height: 180px;
+}
+.areaRenewalKouka li {
+    float: left;
+    width: 300px;
+}
+#bgRenewalKouka03 {
+    padding: 12px 14px;
+    background-color: #EFF5E5;
+    min-height: 180px;
+}
+#listMerit li {
+    margin-bottom: 0.5em;
+}
+h4 {
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+.boxSection {
+    padding: 14px 18px;
+    border: 1px solid #ccc;
+}
+.areaListHalf li li {
+    width: 100%;
+    margin-bottom: 0.3em !important;
+}
+.col02 {
+    color: #00afe9;
+}
+.mgB2L {
+    margin: 32px 0;
+}
+.boxFlow {
+    position: relative;
+    padding: 18px 18px 14px;
+    background-color: #F2FBFE;
+    border: 1px solid #B2E7F8;
+}
+.tCenter {
+    text-align: center;
+}
+.img_center{
+    margin: 0 auto;
+}
+#numberblue{
+    border: 1px solid #53aad7;
+    background: #53aad7;
+}
+.ricsInfo01{
+    font-style: normal;
+    font-weight: bold;
+    color:#1A25BD;
+}
+.copyMainEnsu {
+    margin-bottom: 18px;
+    color: black;
+    font-family: roboto;
+    font-weight: bold;
+}
+.boxVoice, .dlVoice {
+    margin-bottom: 24px;
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+}
+.dlVoice dt {
+    margin-bottom: 8px;
+    padding: 4px 10px 3px;
+    background-color: #E5F7FD;
+    font-size: 1.5rem;
+}
+.displays_flex {
+    display: flex;
+}
+#naviBems li:first-child {
+    margin-right: 26px;
+}
+#naviBems a, #naviRics01 a, #naviRics02en a {
+    padding: 14px 0 12px 12px;
+    color: red;
+    font-size: 18px;
+    border: 2px solid;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+}
+.imgR, .imgRSp {
+    float: right;
+    padding-left: 20px;
+}
+.bg_backgroundF2F2F2{
+    background: #F2F2F2;
+}
+.imgWeb li:last-child {
+    margin-right: 0;
+}
+.imgWeb li {
+    float: left;
+    margin-right: 30px;
+    text-align: center;
+}
+.mgB3L {
+    margin-bottom: 40px !important;
+}
+#naviBems li {
+    float: left;
+    width: 100%;
+}
+.img-center{
+    text-align: center;
+}
+.boxFlow {
+    position: relative;
+    padding: 18px 18px 14px;
+    background-color: #F2F2F2;
+    border: 1px solid #E0E0E0;
+}
 @media (min-width: 500px) {
     #button {
         margin: 30px;

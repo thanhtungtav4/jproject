@@ -13,12 +13,10 @@
 */
 Route::get('locale/{locale}', 'IndexController@changeLocale')->name('frontend.index.change-locale');
 Route::group(['middleware' => ['locale']], function () {
-
-    Route::get('/', 'IndexController@index');
-
+ Route::get('/', 'IndexController@index');
     Route::group(['prefix' => 'vi', 'lang' => 'vi'], function () {
-        Route::get('/', 'IndexController@index')->name('frontend.home_vi');
-        Route::post('/', 'IndexController@submitContact')->name('frontend.home_vi');
+        Route::get('/index', 'IndexController@index')->name('frontend.home_vi');
+        Route::post('/index', 'IndexController@submitContact')->name('frontend.home_vi');
         // Giới thiệu
         Route::get('gioi-thieu', 'AboutUsController@index')->name('frontend.about_vi');
         // Company
@@ -63,8 +61,8 @@ Route::group(['middleware' => ['locale']], function () {
     });
 
     Route::group(['prefix' => 'en', 'lang' => 'en'], function () {
-        Route::get('/', 'IndexController@index')->name('frontend.home_en');
-        Route::post('/', 'IndexController@submitContact')->name('frontend.home_en');
+        Route::get('/index', 'IndexController@index')->name('frontend.home_en');
+        Route::post('/index', 'IndexController@submitContact')->name('frontend.home_en');
         // Giới thiệu
         Route::get('about-us', 'AboutUsController@index')->name('frontend.about_en');
         // Company
