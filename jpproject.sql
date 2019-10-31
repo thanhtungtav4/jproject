@@ -11,7 +11,7 @@
  Target Server Version : 100138
  File Encoding         : 65001
 
- Date: 30/10/2019 09:44:53
+ Date: 31/10/2019 09:59:59
 */
 
 SET NAMES utf8mb4;
@@ -896,8 +896,8 @@ CREATE TABLE `tpcloud_cms_plugin`  (
   `plugin_float` enum('left','right') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL DEFAULT NULL,
   `is_active` tinyint(1) NULL DEFAULT 1,
   `is_deleted` tinyint(1) NULL DEFAULT 0,
-  `created_at` datetime(0) NULL DEFAULT NULL,
-  `updated_at` datetime(0) NULL DEFAULT NULL,
+  `created_at` datetime(0) NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP(0),
+  `updated_at` timestamp(0) NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP(0),
   `created_by` int(11) NULL DEFAULT NULL,
   `updated_by` int(11) NULL DEFAULT NULL,
   `icon_image` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL DEFAULT NULL,

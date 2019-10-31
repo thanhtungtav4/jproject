@@ -780,6 +780,7 @@ h3.b-w3ltxt {
 
 }
 .footer_box{
+    margin-top: 5rem;
     background: black;
     color:#ffffff;
     font-style: normal;
@@ -2306,6 +2307,7 @@ header .nav-link {
     color: #fff;
     zoom: 1;
 }
+
 .copyMainEn {
     margin-bottom: 18px;
     color: #2153a0;
@@ -2364,6 +2366,9 @@ header .nav-link {
     .business_box h4 {
         font-size: 18px;
         line-height: 24px;
+    }
+    .title-h1 {
+        margin-left: 0rem;
     }
     .text_home {
         top: 9%;

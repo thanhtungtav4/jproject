@@ -12,7 +12,6 @@
 |
 */
 Route::get('locale/{locale}', 'IndexController@changeLocale')->name('frontend.index.change-locale');
-
 Route::group(['middleware' => ['locale']], function () {
 
     Route::get('/', 'IndexController@index');
