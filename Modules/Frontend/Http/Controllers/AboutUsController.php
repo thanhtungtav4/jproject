@@ -245,7 +245,7 @@ class AboutUsController extends BaseController
         $filter = [
             'page_type' => 'maintenance'
         ];
-        $arrPage = $this->repoPage->getCurrentPage($filter);
+        $arrPage = $this->repoPage->getCurrentPageByType($filter);
 
         return view('frontend::company.maintenance', [
             'arrPage'  => $arrPage

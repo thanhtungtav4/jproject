@@ -28,7 +28,9 @@
             </div>
             <div class="hidden-box-solution ">
                 <p class="title-hidden">{{$item[getValueByLang('plugin_title_')]}}</p>
-                {!! $item[getValueByLang('plugin_content_')] !!}
+                @if (!empty(getValueByLang('plugin_content_other_')))
+                {!! $item[getValueByLang('plugin_content_other_')] !!}
+                @endif
             </div>
         </div>
 

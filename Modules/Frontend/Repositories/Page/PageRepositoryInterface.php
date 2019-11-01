@@ -14,6 +14,8 @@ interface PageRepositoryInterface
 
     public function getCurrentPage(array $filters = []);
 
+    public function getCurrentPageByType(array $filters = []);
+
 
 
     /**

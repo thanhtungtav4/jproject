@@ -2014,6 +2014,9 @@ a.move-top {
 /*.title-h1{*/
     /*margin-left: -2rem;*/
 /*}*/
+.container .title-h1{
+    margin-left: -15px;
+}
 .tRight {
     text-align: right;
 }
@@ -2100,6 +2103,7 @@ h5{
 }
 .home_box .icon_box .item_icon{
     background: unset;
+    margin: 0 12px;
 }
 .home_box .icon_box .item_icon img{
     max-width: 100%;
@@ -2738,6 +2742,16 @@ div#carousel-example-1z {
         display: contents;
         text-align: center;
     }
+    .banner {
+        padding: 4rem 1rem 4rem 1rem;
+    }
+    .title_img_home {
+        position: absolute;
+        bottom: 17%;
+        color: #ffffff;
+        width: 80%;
+        margin: 0 auto;
+    }
 }
 @media screen and (max-width: 500px){
     .home_box .icon_box {
@@ -2753,6 +2767,9 @@ div#carousel-example-1z {
         left: 0;
         right: 0;
         top: 10%;
+    }
+    .home_box .icon_box {
+        top: 18%;
     }
 }
 @media screen and (max-width: 425px) {

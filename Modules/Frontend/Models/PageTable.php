@@ -34,6 +34,19 @@ class PageTable extends BaseModel
         if (is_array($condition)) {
             $oSelect->where($condition);
         } else {
+            $oSelect->where('page_id', $condition);
+        }
+
+        return $this->makeResult($oSelect);
+    }
+
+    public function getCurrentPageByType($condition)
+    {
+        $oSelect = $this->orderBy('page_position', 'desc');
+
+        if (is_array($condition)) {
+            $oSelect->where($condition);
+        } else {
             $oSelect->where('page_type', $condition);
         }
 

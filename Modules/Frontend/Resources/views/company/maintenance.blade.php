@@ -8,9 +8,9 @@
                 <div class="col-md-3">
                     <strong class="profile_title">{{ $arrPage[0][getValueByLang('page_title_')] }}</strong>
                     <ul class="nav">
-                        @foreach($arrPage as $page)
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#{{ $page['page_alias_en'] }}">{{ $page[getValueByLang('page_title_')] }}</a>
+                        @foreach($arrPage as $index => $page)
+                            <li class="nav-item {{ $index == 0 ? 'active' : null }}">
+                                <a class="nav-link {{ $index == 0 ? 'active' : null }}" data-toggle="tab" href="#{{ $page['page_alias_en'] }}">{{ $page[getValueByLang('page_title_')] }}</a>
                             </li>
                         @endforeach
                     </ul>
