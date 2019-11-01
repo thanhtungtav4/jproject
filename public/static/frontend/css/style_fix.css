@@ -1,7 +1,68 @@
-.dropdown:hover>.dropdown-menu {
-    display: block;
+a.dropdown-toggle::after{
+    display: none;
+}
+.href-a {
+    padding-top: 0;
+}
+.btn-dropdown-toggle {
+    background: none;
+    border: none;
+}
+.btn-dropdown-toggle , .href-a{
+    display: inline-block !important;
+}
+.menu-mobile {
+    display: none;
+}
+.box_solution {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.hidden-box-solution {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    text-align: center;
+    background: #F22D2D;
+    transform: rotateY(180deg);
+}
+.hidden-box-solution p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+.hidden-box-solution {
+    backface-visibility: hidden;
+}
+.box_solution:hover {
+    transform: rotateY(180deg);
+}
+.title-hidden {
+    padding-top: 20px;
+}
+@media all and (min-width: 992px) {
+    .href-a {
+        padding-right: 0 !important;
+        padding-bottom: 0;
+    }
+
+    .dropdown-menu {
+        top: 70%;
+    }
 }
 @media all and (max-width : 991px) {
+    .btn-dropdown-toggle {
+        display: block;
+    }
     .menu {
         position: fixed;
         right: 0;
@@ -14,7 +75,7 @@
         border-bottom: 1px solid #e9ecef;
         padding: 1rem 1.5rem;
         padding-left: 0;
-        padding-right: 0;
+        /*padding-right: 0;*/
     }
     .menu li a {
         text-transform: uppercase;
@@ -35,7 +96,34 @@
         overflow: hidden;
         margin-top: 10px;
     }
+    .dropdown-toggle::after{
+        display: none;
+    }
+    .href-a {
+        width: 80%;
+        display: inline-block !important;
+    }
+    .btn-dropdown-toggle {
+        background: none;
+        border: none;
+        display: inline-block !important;
+    }
+    .btn-dropdown-toggle::after {
+        display: inline-block;
+        width: 0;
+        height: 10px;
+        margin-left: 0.255em;
+        vertical-align: 0.255em;
+        content: "";
+        border-top: 0.3em solid;
+        border-right: 0.3em solid transparent;
+        border-bottom: 0;
+        border-left: 0.3em solid transparent;
+        color: red;
+        float: right;
+    }
 }
+
 @media all and (max-width : 320px) {
     .menu {
         top: 13%;

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Config;
+use Illuminate\Support\Facades\Route;
 use Modules\Frontend\Http\Requests\ContactRequest;
 use Modules\Frontend\Repositories\Agency\AgencyRepositoryInterface;
 use Modules\Frontend\Repositories\Contact\ContactRepositoryInterface;
@@ -18,6 +19,7 @@ class IndexController extends BaseController
     protected $repoPage;
     protected $repoAgency;
     protected $contact;
+    private $pageLang = ['vi', 'en'];
 
     public function __construct(
         PageMapRepositoryInterface $repoPageMap,
@@ -86,6 +88,27 @@ class IndexController extends BaseController
     }
 
     public function sitemap(){
-        return 'dmm';
+        $routeCollection = Route::getRoutes();
+        $routeVi = [];
+        $routeEn = [];
+        $routeMatch = [];
+        foreach ($routeCollection as $value) {
+            if ($value->getPrefix() == '/vi' && $value->methods()[0] == 'GET') {
+                $routeVi[] = $value->uri();
+            } elseif ($value->getPrefix() == '/en' && $value->methods()[0] == 'GET') {
+                $routeEn[] = $value->uri();
+            }
+        }
+        foreach ($routeVi as $key => $value) {
+            $routeMatch[$key]['vi'] = $value;
+            $routeMatch[$key]['en'] = $routeEn[$key];
+        }
+
+        return response()
+            ->view('frontend::sitemap', [
+                'routeMatch' => $routeMatch,
+                'pageLang' => $this->pageLang,
+            ])
+            ->header('Content-Type', 'application/xml');
     }
 }
