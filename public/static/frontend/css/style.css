@@ -2072,6 +2072,7 @@ Business icon css
     margin: 5px;
     border-radius: 50%;
     display: inline-block;
+    width: 43px;
 }
 h5{
     font-style: normal;
