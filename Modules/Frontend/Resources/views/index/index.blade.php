@@ -22,6 +22,7 @@
         </div>
     @endif
     <!-- about -->
+    {{--{{dd($data['about-home-list'])}}--}}
     @if(!empty($data['about-home-list'])) @include('frontend::plugin.about-box', ['data' => $data['about-home-list']]) @endif
     <!-- //about plugin_title_-->
     <!-- services -->

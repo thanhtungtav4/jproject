@@ -2752,6 +2752,22 @@ div#carousel-example-1z {
         width: 80%;
         margin: 0 auto;
     }
+    .text_banner {
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 0;
+    }
+    .text_banner_animation{
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+    .title_img_home {
+        bottom: 10%;
+    }
+    .title_img_home {
+        bottom: 10%;
+        font-size: 16px;
+    }
 }
 @media screen and (max-width: 500px){
     .home_box .icon_box {
@@ -2780,8 +2796,8 @@ div#carousel-example-1z {
 @media screen and (max-width: 375px) {
     .title_img_home {
         position: absolute;
-        bottom: 0%;
-        font-size: 12px;
+        bottom: 10%;
+        font-size: 16px;
         color: #ffffff;
     }
 }

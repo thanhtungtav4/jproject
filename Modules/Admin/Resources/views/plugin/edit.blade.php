@@ -217,7 +217,7 @@
                             </div>
                         </div>
                         <!-- list solution -->
-                        @if($param['plugin_type'] == 'solution-list' and $param['plugin_type']='about-home-list')
+                        @if($param['plugin_type'] == 'solution-list' or $param['plugin_type']='about-home-list')
                             <div class="form-group">
                                 <div class="row">
                                         <div class="col-3">
@@ -306,7 +306,7 @@
                                 </div>
                             </div>
                             <!-- about home list -->
-                            @if($param['plugin_type'] =='about-home-list')
+                            @if($param['plugin_type'] == 'about-home-list')
                                 <div class="form-group">
                                     <div class="row">
                                         <div class="col-3">
