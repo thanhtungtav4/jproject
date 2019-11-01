@@ -106,7 +106,12 @@
             }, 500);
         });
 
-        $(document).ready(function () {
+        // $(document).ready(function () {
+        //     var hash = window.location.hash;
+        //     $( 'ul.nav a[href="' + hash + '"]' ).click();
+        //
+        // })
+        $('.dropdown-item').bind('click',function () {
             var hash = window.location.hash;
             $( 'ul.nav a[href="' + hash + '"]' ).click();
         })

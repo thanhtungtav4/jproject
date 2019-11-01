@@ -9,9 +9,11 @@
             <input type="checkbox" id="drop" />
                 <ul class="menu mt-2 ml-auto">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="{{route('frontend.company_'.Config::get('app.locale'))}}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+{{--                        <a class="href-a nav-link dropdown-toggle" href="{{route('frontend.company_'.Config::get('app.locale'))}}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">--}}
+                        <a class="href-a" href="{{route('frontend.company_'.Config::get('app.locale'))}}">
                             @lang('frontend::index.corporateprofile')
                         </a>
+                        <button class="nav-link dropdown-toggle btn-dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="{{route('frontend.company_'.Config::get('app.locale'))}}#about"> @lang('frontend::index.history')</a>
                             {{--//Corporate Profile & History--}}
@@ -25,9 +27,10 @@
                     </li>
                     <li class=""><a href="{{route('frontend.business_'.Config::get('app.locale'))}}">@lang('frontend::index.business_outline')</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="{{route('frontend.solution-cat_'.Config::get('app.locale'))}}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="href-a nav-link dropdown-toggle" href="{{route('frontend.solution-cat_'.Config::get('app.locale'))}}">
                             @lang('frontend::index.solution')
                         </a>
+                        <button class="nav-link dropdown-toggle btn-dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="{{route('frontend.solution_'.Config::get('app.locale'))}}#tab_43">@lang('frontend::index.air_conditioning')</a>
                             <div class="dropdown-divider"></div>
@@ -46,9 +49,10 @@
                     </li>
                     <li class=""><a href="{{route('frontend.works_'.Config::get('app.locale'))}}">@lang('frontend::index.works')</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="{{route('frontend.maintenance_'.Config::get('app.locale'))}}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="href-a nav-link dropdown-toggle" href="{{route('frontend.maintenance_'.Config::get('app.locale'))}}">
                             @lang('frontend::index.maintenance')
                         </a>
+                        <button class="nav-link dropdown-toggle btn-dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="{{route('frontend.maintenance_'.Config::get('app.locale'))}}#contractdetails">@lang('frontend::index.contract_details')</a>
                             <div class="dropdown-divider"></div>
