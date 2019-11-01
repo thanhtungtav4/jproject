@@ -11,7 +11,7 @@
 				<a href="#"> Legal Notices & Trademarks</a>
 			</li>
 			<li>
-				<a href="#">Site map</a>
+				<a href="{{ route('sitemap') }}">Site map</a>
 			</li>
 		</ul>
 	</div>
