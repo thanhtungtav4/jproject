@@ -245,12 +245,12 @@ class AboutUsController extends BaseController
     public function maintenance()
     {
         $filter = [
-            'page_id' => 25
+            'page_type' => 'maintenance'
         ];
-        $arrPage = $this->repoPage->getCurrentPage($filter);
+        $arrPage = $this->repoPage->getCurrentPageByType($filter);
 
         return view('frontend::company.maintenance', [
-            'page'  => $arrPage
+            'arrPage'  => $arrPage
         ]);
     }
 

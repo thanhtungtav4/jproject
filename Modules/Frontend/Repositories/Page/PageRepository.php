@@ -35,6 +35,12 @@ class PageRepository implements PageRepositoryInterface
         return collect($this->mDBA->getCurrentPage($filters['page_id']))->first();
     }
 
+    public function getCurrentPageByType(array $filters = [])
+    {
+        return collect($this->mDBA->getCurrentPageByType($filters['page_type']));
+    }
+
+
     /**
      * Lấy thông tin trang hiện tại theo alias
      *
