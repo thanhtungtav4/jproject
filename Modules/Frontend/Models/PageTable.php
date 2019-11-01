@@ -34,7 +34,7 @@ class PageTable extends BaseModel
         if (is_array($condition)) {
             $oSelect->where($condition);
         } else {
-            $oSelect->where('page_id', $condition);
+            $oSelect->where('page_type', $condition);
         }
 
         return $this->makeResult($oSelect);

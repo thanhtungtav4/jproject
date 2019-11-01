@@ -29,7 +29,7 @@ class PageRepository implements PageRepositoryInterface
 
     public function getCurrentPage(array $filters = [])
     {
-        return collect($this->mDBA->getCurrentPage($filters['page_id']))->first();
+        return collect($this->mDBA->getCurrentPage($filters['page_type']));
     }
 
     /**
