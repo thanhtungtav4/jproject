@@ -201,10 +201,12 @@ class AboutUsController extends BaseController
         $filter = [
             'page_id' => 7
         ];
-        $arrPage = $this->repoPage->getCurrentPage($filter);
-
-        return view('frontend::company.solution_cat', [
-            'page'  => $arrPage
+//        $arrPage = $this->repoPage->getCurrentPage($filter);
+//        $id = [43,44,45,46,47,48,49,50,51,52,53];
+        $plugin_type = 'solution-list';
+        $list = $this->repoPage->getPluginType($plugin_type);
+        return view('frontend::solution.solution_cat', [
+            'page'  => $list
         ]);
     }
 

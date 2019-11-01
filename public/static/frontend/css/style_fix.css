@@ -14,7 +14,7 @@ a.dropdown-toggle::after{
 .menu-mobile {
     display: none;
 }
-.box_solution {
+.box_solution-home {
     position: relative;
     width: 100%;
     height: 100%;
@@ -28,6 +28,7 @@ a.dropdown-toggle::after{
     height: 100%;
     width: 100%;
     top: 0%;
+    padding: 10px;
     text-align: center;
     background: #F22D2D;
     transform: rotateY(180deg);
@@ -43,7 +44,7 @@ a.dropdown-toggle::after{
 .hidden-box-solution {
     backface-visibility: hidden;
 }
-.box_solution:hover {
+.box_solution-home:hover {
     transform: rotateY(180deg);
 }
 .title-hidden {
@@ -66,7 +67,7 @@ a.dropdown-toggle::after{
     .menu {
         position: fixed;
         right: 0;
-        width: 90% !important;
+        width: 100% !important;
         height: 100%;
         top: 10%;
     }
