@@ -2100,10 +2100,6 @@ h5{
 .home_box .icon_box .item_icon{
     background: unset;
 }
-.home_box .icon_box .item_icon:hover{
-    background-color: #b5b6bf78;
-    padding: 5px;
-}
 .home_box .icon_box .item_icon img{
     max-width: 100%;
 }
@@ -2161,9 +2157,6 @@ a:hover , .read_more:hover p , .footer_box_ul li:hover a{
 }
 .icon_box .item_icon img{
     max-width: 60%;
-}
-.icon_box .item_icon:hover{
-    background-color: #000a91;
 }
 .read_more p{
     font-family: Roboto;
@@ -2642,6 +2635,15 @@ h4 {
 }
 #naviBems li {
     float: left;
+    width: 100%;
+}
+.border_bottom_home_home {
+    border-bottom: 2.5px solid red;
+    max-width: 50px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+.mgBL img{
     width: 100%;
 }
 .img-center{
