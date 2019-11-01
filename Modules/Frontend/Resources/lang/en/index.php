@@ -46,6 +46,6 @@ return [
     'contract_details' => 'Contract Details',
     'contract_process_flow' => 'Contract Process Flow',
     // !Maintenance
-    'inquiries' => 'Inquiries',
+    'Inquiries' => 'Inquiries',
     // !Inquiries
 ];
