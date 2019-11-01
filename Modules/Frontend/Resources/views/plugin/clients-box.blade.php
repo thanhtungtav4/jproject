@@ -1,6 +1,5 @@
 <div class="row offer-grids">
     @foreach($data as $item)
-        {{--{{dd($item)}}--}}
     <div class="col-lg-4 col-md-6 mt-lg-0 mt-4">
         <div class="ser1">
             <div class="bg-layer">

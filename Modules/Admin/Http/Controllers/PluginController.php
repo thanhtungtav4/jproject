@@ -49,6 +49,7 @@ class PluginController extends Controller
         $url = $this->request->all();
         $param = $this->request->route('plugin_id');
         $data = $this->plugin->getDetailPlugin($param);
+        //dd($data);
         return view('admin::plugin.edit', [
             'detail' => $data,
             'param' => $url
@@ -59,6 +60,7 @@ class PluginController extends Controller
     {
         $param = $this->request->all();
         $data = $this->plugin->updatePlugin($param);
+        //dd($data);
         return $data;
     }
 
@@ -97,7 +99,7 @@ class PluginController extends Controller
             date_format($time, 'd') .
             date_format($time, 'm') .
             date_format($time, 'Y') . "_page." . $file->getClientOriginalExtension();
-
+       // dd($file_name);
         $file->move(TEMP_PATH, $file_name);
         return $file_name;
     }
