@@ -176,7 +176,7 @@ class PluginRepository implements PluginRepositoryInterface
                         }
                     }
                     /** add icon Solution*/
-                    if ($arr['plugin_type'] != 'item-box' && $arr['plugin_type'] == 'solution-list'){
+                    if ($arr['plugin_type'] != 'item-box' or $arr['plugin_type'] == 'solution-list'){
                         if (isset($arr['icon_image'])) {
                             $arr['icon_image'] = $this->transferTempfileToAdminfile(
                                 $arr['icon_image'],
@@ -186,7 +186,7 @@ class PluginRepository implements PluginRepositoryInterface
                             unset($arr['icon_image']);
                         }
                     }
-                    if ($arr['plugin_type'] != 'item-box' && $arr['plugin_type'] == 'solution-list'){
+                    if ($arr['plugin_type'] != 'item-box' or $arr['plugin_type'] == 'solution-list'){
                         if (isset($arr['icon2_image'])) {
                             $arr['icon2_image'] = $this->transferTempfileToAdminfile(
                                 $arr['icon2_image'],
@@ -196,7 +196,7 @@ class PluginRepository implements PluginRepositoryInterface
                             unset($arr['icon2_image']);
                         }
                     }
-                    if ($arr['plugin_type'] != 'item-box' && $arr['plugin_type'] == 'solution-list'){
+                    if ($arr['plugin_type'] != 'item-box' or $arr['plugin_type'] == 'solution-list'){
                         if (isset($arr['icon3_image'])) {
                             $arr['icon3_image'] = $this->transferTempfileToAdminfile(
                                 $arr['icon3_image'],
