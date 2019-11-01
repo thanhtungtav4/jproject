@@ -105,4 +105,4 @@ Route::group(['middleware' => ['locale']], function () {
     });
 });
 
-Route::get('/sitemap', 'IndexController@sitemap')->name('sitemap');
+Route::get('/sitemap.xml', 'IndexController@sitemap')->name('sitemap');
