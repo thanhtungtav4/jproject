@@ -12,33 +12,33 @@
     <section class="main_content">
         <div class="container">
             <div class="row">
-                @foreach($page as $value)
-                    <div class="col-md-3 col-sm-6 col-6 item_solution_box">
+                @foreach($page as $item)
+                    <div class="col-md-4 col-lg-3  item_solution_box list_arv">
                         <a href="#">
                             <div class="box_solution">
                                 <div class="item_img_solution_box">
-                                    <img class="img-fluid" src="/{{$value['plugin_image']}}">
+                                    <img class="img-fluid" src="{{asset($item['plugin_image'])}}">
                                 </div>
                                 <div class="icon_box">
-                                    @if(isset($value['icon_image']))
+                                    @if (!empty($item['icon_image']))
                                         <div class="item_icon">
-                                            <img src="/{{$value['icon_image']}}">
+                                            <img src="{{asset($item['icon_image'])}}">
                                         </div>
                                     @endif
-                                    @if(isset($value['icon_image2']))
+                                    @if (!empty($item['icon2_image']))
                                         <div class="item_icon">
-                                            <img src="/{{$value['icon_image2']}}">
+                                            <img src="{{asset($item['icon2_image'])}}">
                                         </div>
                                     @endif
-                                    @if(isset($value['icon_image3']))
+                                    @if (!empty($item['icon3_image']))
                                         <div class="item_icon">
-                                            <img src="/{{$value['icon_image3']}}">
+                                            <img src="{{asset($item['icon3_image'])}}">
                                         </div>
                                     @endif
                                 </div>
                             </div>
                             <div class="container_tittle">
-                                <h5>{{$value[getValueByLang('plugin_title_')]}}</h5>
+                                <h5>{{$item[getValueByLang('plugin_title_')]}}</h5>
                                 <div class="read_more">
                                     <p>Read more</p>
                                 </div>

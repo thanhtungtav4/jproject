@@ -2660,6 +2660,19 @@ h4 {
     background-color: #F2F2F2;
     border: 1px solid #E0E0E0;
 }
+.list_arv .icon_box {
+    bottom: -24px;
+}
+.list_arv .icon_box .item_icon {
+    padding: 8px 5px;
+    margin: 8px;
+    width: 45px;
+}
+.list_arv  .container_tittle h5 {
+    margin-top: 24px;
+    font-size: 18px;
+    color: black;
+}
 div#carousel-example-1z {
     width: 100%;
 }

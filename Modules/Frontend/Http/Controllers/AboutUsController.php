@@ -205,6 +205,7 @@ class AboutUsController extends BaseController
 //        $id = [43,44,45,46,47,48,49,50,51,52,53];
         $plugin_type = 'solution-list';
         $list = $this->repoPage->getPluginType($plugin_type);
+        //dd($list);
         return view('frontend::solution.solution_cat', [
             'page'  => $list
         ]);
