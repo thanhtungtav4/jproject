@@ -59,7 +59,7 @@
                             <a class="dropdown-item" href="{{route('frontend.maintenance_'.Config::get('app.locale'))}}#contractprocessflow">@lang('frontend::index.contract_process_flow')</a>
                         </div>
                     </li>
-                    <li class=""><a href="{{route('frontend.about.contact_'.Config::get('app.locale'))}}">@lang('frontend::index.inquiries')</a></li>
+                    <li class=""><a href="{{route('frontend.about.contact_'.Config::get('app.locale'))}}">@lang('frontend::index.Inquiries')</a></li>
                 </ul>
 
         </nav>
