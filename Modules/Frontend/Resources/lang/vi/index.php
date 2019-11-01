@@ -48,6 +48,6 @@ return [
     'contract_details' => 'Chi tiết hợp đồng',
     'contract_process_flow' => 'Quy trình hợp đồng',
     // !Maintenance
-    'inquiries' => 'Liên hệ',
+    'Inquiries' => 'Liên Hệ',
     // !Inquiries
 ];

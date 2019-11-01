@@ -16,8 +16,7 @@ class ContactTable extends Model
     protected $fillable = [
         'id',
         'fullname',
-        'company',
-        'phone',
+        'subject',
         'email',
         'question_1',
         'question_2',
@@ -44,8 +43,7 @@ class ContactTable extends Model
         $ds = $this->select(
             'id',
             'fullname',
-            'company',
-            'phone',
+            'subject',
             'email',
             'created_at'
         )->orderBy('created_at', 'desc');
@@ -54,7 +52,6 @@ class ContactTable extends Model
             $search = $filter['keyword_search'];
             $ds->where(function ($query) use ($search) {
                 $query->where('fullname', 'like', '%' . $search . '%')
-                    ->orWhere('company', 'like', '%' . $search . '%')
                     ->orWhere('phone', 'like', '%' . $search . '%')
                     ->orWhere('email', 'like', '%' . $search . '%');
             });

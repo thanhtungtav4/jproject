@@ -8,6 +8,7 @@
                     <div>
                         <span class="text_banner_animation">{{$dataShareConfig['wellcome_line_2'][getValueByLang('')] }}</span></div>
                 </div>
+                <div class="border_bottom_home_home"></div>
                 <section class="home_box">
                     <section class="main_content">
                         <div class="container business_box">
@@ -36,7 +37,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-2">
-                    <p class="from_contact">Inquiries</p>
+                    <p class="from_contact">@lang('frontend::index.Inquiries')</p>
                     <div class="border_bottom_home"></div>
                 </div>
                 <div class="col-md-10">
