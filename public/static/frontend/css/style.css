@@ -2663,6 +2663,9 @@ h4 {
 .list_arv .icon_box {
     bottom: -24px;
 }
+.contact .form-control{
+    background: #E0E0E0;
+}
 .list_arv .icon_box .item_icon {
     padding: 8px 5px;
     margin: 8px;
