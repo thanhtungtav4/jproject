@@ -17,18 +17,24 @@
                         <a href="#">
                             <div class="box_solution">
                                 <div class="item_img_solution_box">
-                                    <img class="img-fluid" src="{{$value['plugin_image']}}">
+                                    <img class="img-fluid" src="/{{$value['plugin_image']}}">
                                 </div>
                                 <div class="icon_box">
-                                    <div class="item_icon">
-                                        <img src="{{$value['icon_image']}}">
-                                    </div>
-                                    <div class="item_icon">
-                                        <img src="{{$value['icon_image2']}}">
-                                    </div>
-                                    <div class="item_icon">
-                                        <img src="{{$value['icon_image3']}}">
-                                    </div>
+                                    @if(isset($value['icon_image']))
+                                        <div class="item_icon">
+                                            <img src="/{{$value['icon_image']}}">
+                                        </div>
+                                    @endif
+                                    @if(isset($value['icon_image2']))
+                                        <div class="item_icon">
+                                            <img src="/{{$value['icon_image2']}}">
+                                        </div>
+                                    @endif
+                                    @if(isset($value['icon_image3']))
+                                        <div class="item_icon">
+                                            <img src="/{{$value['icon_image3']}}">
+                                        </div>
+                                    @endif
                                 </div>
                             </div>
                             <div class="container_tittle">
