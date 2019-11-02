@@ -11,7 +11,7 @@
                 <div class="border_bottom_home_home"></div>
                 <section class="home_box">
                     <section class="main_content">
-                        <div class="container business_box">
+                        <div class="container business_box custom-container-box">
                             <div class="row">
                                 @include('frontend::plugin.silder-box', ['data' => $data['solution-list']])
                             </div>

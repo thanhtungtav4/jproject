@@ -2680,6 +2680,13 @@ h4 {
     font-size: 18px;
     color: black;
 }
+.text_banner_animation{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 47px;
+}
+
 div#carousel-example-1z {
     width: 100%;
 }
@@ -2692,6 +2699,11 @@ div#carousel-example-1z {
     .business_box h4 {
         font-size: 24px;
         line-height: 44px;
+    }
+}
+@media (min-width: 1200px){
+    .custom-container-box {
+        max-width: 1321px;
     }
 }
 @media screen and (max-width: 1024px) {
