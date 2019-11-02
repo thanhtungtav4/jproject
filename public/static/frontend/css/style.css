@@ -337,6 +337,7 @@ h4{
 }
 .menu li a{
     text-transform: uppercase;
+    font-weight: bold;
 }
 header {
     position: absolute;
