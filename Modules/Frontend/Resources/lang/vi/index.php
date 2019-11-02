@@ -49,5 +49,6 @@ return [
     'contract_process_flow' => 'Quy trình hợp đồng',
     // !Maintenance
     'Inquiries' => 'Liên Hệ',
+    'namecontact' =>'Tên của bạn',
     // !Inquiries
 ];

@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'namecontact' =>'Your name',
     'Email' =>'Email',
     'Note' =>'Messenge',
     'Send' => 'Send',
