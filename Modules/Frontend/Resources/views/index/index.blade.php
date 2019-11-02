@@ -70,14 +70,14 @@
                                     <label class="text-danger">{{ $errors->first('email') }}</label>
                                 @endif
                                 <label for="subject">@lang('frontend::index.Subject')</label>
-                                <input type="text" class="form-control" id="subject" placeholder="" name="subject"> @if ($errors->has('subject'))
+                                <input type="text" class="form-control" id="subject" placeholder="" value="{{ old('subject') }}" name="subject"> @if ($errors->has('subject'))
                                     <label class="text-danger">{{ $errors->first('subject') }}</label>
                                 @endif
                             </div>
                             <div class="col-md-8">
                                 <div class="form-group">
                                     <label for="note">@lang('frontend::index.Note')</label>
-                                    <textarea class="form-control" id="note" name="note" rows="4"></textarea>
+                                    <textarea class="form-control" id="note" name="note" rows="4">{{ old('note') }}</textarea>
                                     <div class="form-group btn_contact_box">
                                         <button class="btn btn_contact" type="submit">@lang('frontend::index.Send')</button>
                                     </div>
