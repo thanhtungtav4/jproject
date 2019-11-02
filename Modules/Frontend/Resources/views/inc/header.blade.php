@@ -25,7 +25,7 @@
                             <a class="dropdown-item" href="{{route('frontend.company_'.Config::get('app.locale'))}}#policy">@lang('frontend::index.policy')</a>
                         </div>
                     </li>
-                    <li class=""><a href="{{route('frontend.business_'.Config::get('app.locale'))}}">@lang('frontend::index.business_outline')</a></li>
+                    <li class=""><a class="href-a" href="{{route('frontend.business_'.Config::get('app.locale'))}}">@lang('frontend::index.business_outline')</a></li>
                     <li class="nav-item dropdown">
                         <a class="href-a nav-link dropdown-toggle" href="{{route('frontend.solution-cat_'.Config::get('app.locale'))}}">
                             @lang('frontend::index.solution')
@@ -47,7 +47,7 @@
                             <a class="dropdown-item" href="{{route('frontend.solution_'.Config::get('app.locale'))}}#tab_53">@lang('frontend::index.equipment_renewal')</a>
                         </div>
                     </li>
-                    <li class=""><a href="{{route('frontend.works_'.Config::get('app.locale'))}}">@lang('frontend::index.works')</a></li>
+                    <li class=""><a class="href-a" href="{{route('frontend.works_'.Config::get('app.locale'))}}">@lang('frontend::index.works')</a></li>
                     <li class="nav-item dropdown">
                         <a class="href-a nav-link dropdown-toggle" href="{{route('frontend.maintenance_'.Config::get('app.locale'))}}">
                             @lang('frontend::index.maintenance')
@@ -59,7 +59,7 @@
                             <a class="dropdown-item" href="{{route('frontend.maintenance_'.Config::get('app.locale'))}}#contractprocessflow">@lang('frontend::index.contract_process_flow')</a>
                         </div>
                     </li>
-                    <li class=""><a href="{{route('frontend.about.contact_'.Config::get('app.locale'))}}">@lang('frontend::index.Inquiries')</a></li>
+                    <li class=""><a class="href-a" href="{{route('frontend.about.contact_'.Config::get('app.locale'))}}">@lang('frontend::index.Inquiries')</a></li>
                 </ul>
 
         </nav>
