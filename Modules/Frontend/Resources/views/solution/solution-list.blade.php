@@ -1,14 +1,14 @@
 @extends('frontend::layouts.master')
 {{--@section('title', $page[getValueByLang('page_title_')])--}}
-@section('title', 'Giải pháp')
+@section('title', $page[0][getValueByLang('page_sub_title_1_')]))
 @section('content')
-    {{--    @include('frontend::inc.banner', ['data' => $page[getValueByLang('page_title_')]])--}}
-    @include('frontend::inc.banner', ['data' => 'Giải pháp'])
+    @include('frontend::inc.banner', ['data' => $page[0][getValueByLang('page_sub_title_1_')]])
     <section class="main_content">
         <div class="container">
+            {{--$page[0][getValueByLang('page_sub_title_1_')])--}}
             <div class="row">
                 <div class="col-md-3">
-                    <strong class="profile_title">Solution</strong>
+                    <strong class="profile_title">{{$page[0][getValueByLang('page_sub_title_1_')]}}</strong>
                     <ul class="nav">
                         <?php $tmp = 0 ?>
                         <?php $category = 0 ?>
