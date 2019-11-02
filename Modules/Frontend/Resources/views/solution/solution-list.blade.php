@@ -1,6 +1,6 @@
 @extends('frontend::layouts.master')
 {{--@section('title', $page[getValueByLang('page_title_')])--}}
-@section('title', $page[0][getValueByLang('page_sub_title_1_')]))
+@section('title', $page[0][getValueByLang('page_sub_title_1_')])
 @section('content')
     @include('frontend::inc.banner', ['data' => $page[0][getValueByLang('page_sub_title_1_')]])
     <section class="main_content">
