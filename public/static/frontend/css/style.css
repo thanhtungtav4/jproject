@@ -293,7 +293,7 @@ h4{
     text-align: left;
     color: black;
     position: relative;
-    top: 30%;
+    top: 16%;
     bottom: 30%;
 }
 .abt-grid{
@@ -334,6 +334,9 @@ h4{
     line-height: 37px;
     margin-bottom: 0.4rem;
     color: black;
+}
+.menu li a{
+    text-transform: uppercase;
 }
 header {
     position: absolute;

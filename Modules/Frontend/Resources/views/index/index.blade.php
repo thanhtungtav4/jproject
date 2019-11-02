@@ -61,7 +61,7 @@
                         @csrf
                         <div class="form-row">
                             <div class="col-md-4 mb-3">
-                                <label for="fullname">{{ __('Họ và tên') }}</label>
+                                <label for="fullname">{{ __('Nhấn vào đây để xem chi tiết') }}</label>
                                 <input type="text" class="form-control" id="fullname" placeholder="" name="fullname" value="{{ old('fullname') }}"> @if ($errors->has('fullname'))
                                     <label class="text-danger">{{ $errors->first('fullname') }}</label>
                                 @endif
