@@ -35,6 +35,7 @@ if (window.innerWidth > 992){
 }
 $(document).ready(function () {
     $('.btn-dropdown-toggle').click(function () {
+        $('.btn-dropdown-toggle').removeClass('rotateZ');
         if ( $(this).attr('aria-expanded') == "false" ) {
             $(this).addClass('rotateZ');
         } else {

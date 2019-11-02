@@ -3,6 +3,7 @@ a.dropdown-toggle::after{
 }
 .href-a {
     padding-top: 0;
+    font-size: 15px;
 }
 .btn-dropdown-toggle {
     background: none;
