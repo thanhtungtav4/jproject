@@ -40,7 +40,7 @@
                             <div class="container_tittle">
                                 <h5>{{$item[getValueByLang('plugin_title_')]}}</h5>
                                 <div class="read_more">
-                                    <p>Read more</p>
+                                    <p>{{__('Xem thêm')}}</p>
                                 </div>
                             </div>
                         </a>
