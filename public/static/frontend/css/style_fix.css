@@ -64,10 +64,20 @@ a.dropdown-toggle::after{
     }
 
     .dropdown-menu {
-        top: 70%;
+        /*top: 70%;*/
+        top: 100%;
     }
 }
 @media all and (max-width : 991px) {
+    .btn-dropdown-toggle:focus{
+        outline: 0;
+    }
+    .btn-dropdown-toggle::after {
+        transform: rotateZ(-90deg);
+    }
+    .rotateZ:after {
+        transform: rotateZ(0deg);
+    }
     .btn-dropdown-toggle {
         display: block;
     }
@@ -83,7 +93,7 @@ a.dropdown-toggle::after{
         border-bottom: 1px solid #e9ecef;
         padding: 1rem 1.5rem;
         padding-left: 0;
-        /*padding-right: 0;*/
+        padding-right: 0;
     }
     .menu li a {
         text-transform: uppercase;

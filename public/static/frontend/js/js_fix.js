@@ -33,3 +33,12 @@ if (window.innerWidth > 992){
     });
 
 }
+$(document).ready(function () {
+    $('.btn-dropdown-toggle').click(function () {
+        if ( $(this).attr('aria-expanded') == "false" ) {
+            $(this).addClass('rotateZ');
+        } else {
+            $('.btn-dropdown-toggle').removeClass('rotateZ');
+        }
+    })
+})
