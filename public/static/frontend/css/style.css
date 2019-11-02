@@ -2091,6 +2091,7 @@ h5{
     margin-bottom: 20px;
     text-align: center;
 }
+
 .map_icon_contact:before{
     content: url("../images/icon-business/map.png");
     display: block;
