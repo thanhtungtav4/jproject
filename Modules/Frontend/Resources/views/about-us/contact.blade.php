@@ -40,13 +40,13 @@
                         </div>
                         <div class="form-group">
                             <label for="subject">@lang('frontend::index.Subject')</label>
-                            <input type="text" class="form-control" id="subject" placeholder="" name="subject"> @if ($errors->has('subject'))
+                            <input type="text" class="form-control" id="subject" placeholder="" value="{{ old('subject') }}" name="subject"> @if ($errors->has('subject'))
                                 <label class="text-danger">{{ $errors->first('subject') }}</label>
                             @endif
                         </div>
                         <div class="form-group">
                             <label for="note">@lang('frontend::index.Note')</label>
-                            <textarea class="form-control" id="note" name="note" rows="4"></textarea>
+                            <textarea class="form-control" id="note" name="note" rows="4">{{ old('note') }}</textarea>
                         </div>
 
                         <div class="form-group btn_contact_box">
