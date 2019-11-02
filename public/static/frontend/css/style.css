@@ -314,7 +314,7 @@ h4{
     width: 270px;
     font-size: 14px;
     line-height: 16px;
-    text-align: justify;
+    /*text-align: justify;*/
     height: 90px;
 }
 .text_service{
