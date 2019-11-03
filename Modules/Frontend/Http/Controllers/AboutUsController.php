@@ -220,6 +220,7 @@ class AboutUsController extends BaseController
         $page_type['page_type'] = 'solution-list';
         $id = [43,44,45,46,47,48,49,50,51,52,53];
         $list = $this->repoPage->getSolutionList($id);
+       // dd($list->page_id);
         return view('frontend::solution.solution-list', [
             'page'  => $list,
         ]);

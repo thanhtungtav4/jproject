@@ -3,18 +3,12 @@
 @section('title', __('Giải pháp'))
 @section('content')
     @include('frontend::inc.banner', ['data' => __('Giải pháp')])
-    {{--<div class="banner_sub" id="home">--}}
-        {{--<div class="txt_h1">--}}
-            {{--<h1>Giải pháp</h1>--}}
-            {{--<div class="border_bottom_home"></div>--}}
-        {{--</div>--}}
-    {{--</div>--}}
     <section class="main_content">
         <div class="container">
             <div class="row">
                 @foreach($page as $item)
                     <div class="col-md-4 col-lg-3  item_solution_box list_arv">
-                        <a href="#">
+                        <a href="{{route('frontend.solution_'.Config::get('app.locale'))}}{{$item[getValueByLang('plugin_btn_link_')]}}">
                             <div class="box_solution">
                                 <div class="item_img_solution_box">
                                     <img class="img-fluid" src="{{asset($item['plugin_image'])}}">

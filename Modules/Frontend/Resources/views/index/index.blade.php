@@ -28,7 +28,8 @@
     <!-- services -->
     <section class="services clients-bg">
         <div class="container py-lg-5">
-            <p class="clients_text">{{$dataShareConfig['clients_tititle'][getValueByLang('')]}}</p>
+            {{--<p class="clients_text">{{$dataShareConfig['clients_tititle'][getValueByLang('')]}}</p>--}}
+            <p class="clients_text">{{__('Nhận xét của')}} <strong>{{__('Khách Hàng')}}</strong></p>
             <div class="border_bottom_home padding_bottom_red"></div>
             @if(!empty($data['client-home-list'])) @include('frontend::plugin.clients-box', ['data' => $data['client-home-list']]) @endif
         </div>
