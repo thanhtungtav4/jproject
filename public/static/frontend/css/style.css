@@ -504,6 +504,15 @@ nav ul ul {
 .icon_next{
     color: red;
 }
+.breadcrumb-item a, .breadcrumb-item.active{
+    color: #000000;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    align-items: center;
+    line-height: 140%;
+}
 /* Display Dropdowns on Hover */
 nav ul li:hover > ul {
 	display:inherit;
