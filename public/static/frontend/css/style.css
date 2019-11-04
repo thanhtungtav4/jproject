@@ -2739,6 +2739,9 @@ h4 {
     font-size: 40px;
     line-height: 47px;
 }
+.table-bordered thead{
+    background-color: #F2F2F2;
+}
 .footer_box .container{
     padding-left: 5px;
     padding-right: 5px;
@@ -2901,6 +2904,9 @@ div#carousel-example-1z {
     }
     .home_box .icon_box {
         top: 18%;
+    }
+    .container .title-h1 {
+        margin-left: 0;
     }
 }
 @media screen and (max-width: 425px) {

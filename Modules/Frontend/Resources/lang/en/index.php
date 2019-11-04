@@ -2,7 +2,7 @@
 
 return [
     'namecontact' =>'Your name',
-    'Email' =>'Email',
+    'Email' =>'Your email',
     'Note' =>'Messenge',
     'Send' => 'Send',
     'Subject' =>'Subject',
