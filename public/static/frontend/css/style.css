@@ -2431,6 +2431,9 @@ header .nav-link {
     font-family: Georgia, Times New Roman, serif;
     font-weight: normal;
 }
+#imgEco{
+    margin: 25px;
+}
 #number01 {
     border: 1px solid #E87690;
     background: #E87690;
