@@ -2380,7 +2380,14 @@ header .nav-link {
 .btn_contact:hover{
     background: rgba(0, 0, 0, 0.9);
 }
-
+#tAttentionMainteEn {
+    height: 35px;
+    margin-bottom: 50px;
+    padding-left: 60px;
+    background: url(../images/icon-business/ic_attention.gif) no-repeat 0 0;
+    font-size: 2rem;
+    line-height: 1.2;
+}
 /*tungnt*/
 #colNum01 {
     color: #E87690;
