@@ -112,10 +112,11 @@ a.dropdown-toggle::after{
         outline: 0;
     }
     .btn-dropdown-toggle::after {
-        transform: rotateZ(-90deg);
+        /*transform: rotateZ(0deg);*/
     }
     .rotateZ:after {
-        transform: rotateZ(0deg);
+        /*transform: rotateZ(180deg);*/
+        content: "\f077" !important;
     }
     .btn-dropdown-toggle {
         display: block;
@@ -125,7 +126,7 @@ a.dropdown-toggle::after{
         right: 0;
         width: 100% !important;
         height: 100%;
-        top: 10%;
+        top: 15%;
     }
     .menu li {
         text-align: left;
