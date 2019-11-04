@@ -20,7 +20,7 @@ class SolutionController extends Controller
         $category = 1;
         $page = 'solution-list';
         $page_type = 'solution-list';
-        return view('admin::Solution.index', [
+        return view('admin::solution.index', [
             'page_id' => $page_id,
             'page_type' => $page_type,
             'category' => $category,
