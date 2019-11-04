@@ -1,6 +1,6 @@
 @foreach($data as $item)
     <div class="col-lg-3 col-md-6 col-sm-6 col-12 col-xs-6 item_solution_box">
-    <a href="{!! $item[getValueByLang('plugin_btn_link_')] !!}" target="_blank" >
+    <a  target="_blank" >
 
         <div class="box_solution-home">
             <div class="content-show">
