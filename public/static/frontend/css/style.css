@@ -2147,6 +2147,9 @@ h5{
     color: #ffffff;
     left: 0;
     right: 0;
+    width: 270px;
+    text-align: center;
+    margin: 0 auto;
 }
 .works_h4{
     font-family: Roboto;
