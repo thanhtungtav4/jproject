@@ -64,15 +64,15 @@
                             <div class="col-md-4 mb-3">
                                 <label for="fullname">@lang('frontend::index.namecontact')</label>
                                 <input type="text" class="form-control" id="fullname" placeholder="" name="fullname" value="{{ old('fullname') }}"> @if ($errors->has('fullname'))
-                                    <label class="text-danger">{{ $errors->first('fullname') }}</label>
+                                    <label class="text-danger">{{ $errors->first('fullname') }}</label><br>
                                 @endif
                                 <label for="email">@lang('frontend::index.Email')</label>
                                 <input type="text" type="email" class="form-control" id="email" placeholder="" name="email" value="{{ old('email') }}" oninvalid="this.setCustomValidity('Please Enter valid email')"> @if ($errors->has('email'))
-                                    <label class="text-danger">{{ $errors->first('email') }}</label>
+                                    <label class="text-danger">{{ $errors->first('email') }}</label><br>
                                 @endif
                                 <label for="subject">@lang('frontend::index.Subject')</label>
                                 <input type="text" class="form-control" id="subject" placeholder="" value="{{ old('subject') }}" name="subject"> @if ($errors->has('subject'))
-                                    <label class="text-danger">{{ $errors->first('subject') }}</label>
+                                    <label class="text-danger">{{ __('Vui lòng nhập tiêu đề')}}</label>
                                 @endif
                             </div>
                             <div class="col-md-8">
