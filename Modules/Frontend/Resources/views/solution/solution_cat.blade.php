@@ -2,7 +2,14 @@
 {{--@section('title', $page[getValueByLang('page_title_')])--}}
 @section('title', __('Giải pháp'))
 @section('content')
-    @include('frontend::inc.banner', ['data' => __('Giải pháp')])
+    {{--@include('frontend::inc.banner', ['data' => __('Giải pháp')])--}}
+    <div class="banner_sub" id="home">
+        <div class="txt_h1">
+            <h1>{{ __('Giải pháp')}}</h1>
+            <div class="border_bottom_home"></div>
+        </div>
+        <!--</section>-->
+    </div>
     <section class="main_content">
         <div class="container">
             <div class="row">
