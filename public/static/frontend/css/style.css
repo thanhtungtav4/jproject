@@ -2344,11 +2344,10 @@ header .nav-link {
     border-radius: 50%;
 }
 .h2 {
-    margin-bottom: 20px;
-    padding: 4px 10px 0;
-    background-color: #00afe9;
-    color: #fff;
-    zoom: 1;
+    margin: 20px 0px;
+    padding: 4px 0px 0;
+    color: black;
+    font-weight: bold;
 }
 
 .copyMainEn {
@@ -2424,12 +2423,16 @@ header .nav-link {
     font-weight: normal;
     font-size: 1.1rem;
     line-height: 1.4;
+    padding-left: 15px;
 }
 .copyMainEn {
     margin-bottom: 18px;
     color: #2153a0;
-    font-family: Georgia, Times New Roman, serif;
-    font-weight: normal;
+    font-weight: bold;
+    font-size: 20px;
+}
+#imgEco{
+    margin: 25px;
 }
 #number01 {
     border: 1px solid #E87690;
