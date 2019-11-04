@@ -2867,6 +2867,10 @@ div#carousel-example-1z {
         font-size: 15px !important;
         line-height: 1.5 !important;
     }
+    #naiyo li {
+        font-size: 1.1rem !important;
+        line-height: 1.5rem;
+    }
     .txtNaiyoEn {
         margin-left: 3.5em;
         font-size: 1.1rem;
