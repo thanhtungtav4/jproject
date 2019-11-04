@@ -48,7 +48,7 @@
     "kĩ thuật": "technique",
     "bán hàng": "sell",
 
-    "Họ và tên":  "Full name",
+    "Họ và tên": "Full name",
     "Tên tổ chức/công ty": "Company",
     "Số điện thoại": "Phone",
     "Ghi chú": "Note",
@@ -63,6 +63,7 @@
     "Vui lòng nhập email": "The email field is required",
     "Vui lòng nhập đúng email": "The email must be a valid email address",
     "Email chỉ nhập tối đa 250 ký tự": "The email may not be greater than 250 characters",
+    "Subject chỉ nhập tối đa 250 ký tự": "Subject may not be greater than 250 characters",
     "Vui lòng nhập số điện thoại": "The phone field is required",
     "Vui lòng nhập điện thoại từ 8 đến 20 chữ số": "The phone must be between 8 and 20 digits",
     "Vui lòng nhập tên tổ chức/công ty": "The company field is required",

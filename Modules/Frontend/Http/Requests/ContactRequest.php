@@ -29,7 +29,7 @@ class ContactRequest extends FormRequest
             'email.email' => __('Vui lòng nhập đúng email'),
             'email.max' => __('Email chỉ nhập tối đa 250 ký tự'),
             'subject.required' => __('Vui lòng nhập tiêu đề'),
-            'subject.max' => __('subject chỉ nhập tối đa 250 ký tự'),
+            'subject.max' => __('Subject chỉ nhập tối đa 250 ký tự'),
         ];
     }
 
