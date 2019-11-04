@@ -2864,8 +2864,8 @@ div#carousel-example-1z {
         font-size: 16px;
     }
     h4 {
-        font-size: 15px;
-        line-height: 1.5;
+        font-size: 15px !important;
+        line-height: 1.5 !important;
     }
     .txtNaiyoEn {
         margin-left: 3.5em;
