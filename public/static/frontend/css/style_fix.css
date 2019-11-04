@@ -68,10 +68,19 @@ a.dropdown-toggle::after{
 .title-hidden {
     padding-top: 20px;
 }
+.bold-text {
+    font-weight: bold !important;
+}
 @media all and (min-width: 992px) {
+    .child-nav {
+        padding-left: 30px;
+    }
     .menu li:hover .dropdown-menu {
         display: block;
         width: 300px;
+    }
+    .main_content .nav-item .nav-link {
+        font-size: 15px;
     }
     .menu li div.dropdown-menu a {
         color: black;
