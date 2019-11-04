@@ -2304,7 +2304,7 @@ a:hover , .read_more:hover p , .footer_box_ul li:hover a{
     margin: auto;
 }
 #tAfterMainteEn {
-    height: 45px;
+    /*height: 45px;*/
     margin-bottom: 16px;
     padding-left: 60px;
     background: url(../images/icon-business/ic_after.gif) no-repeat 0 0;
