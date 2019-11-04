@@ -6,7 +6,7 @@
                 <p class="text_banner">{{ $dataShareConfig['wellcome_line_1'][getValueByLang('')] }}</p>
                 <div class="box_text_banner">
                     <div>
-                        <span class="text_banner_animation">{{$dataShareConfig['wellcome_line_2'][getValueByLang('')] }}</span></div>
+                        <span class="text_banner_animation1">{{$dataShareConfig['wellcome_line_2'][getValueByLang('')] }}</span></div>
                 </div>
                 <div class="border_bottom_home_home"></div>
                 <section class="home_box">
