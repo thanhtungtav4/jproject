@@ -469,10 +469,19 @@ nav a:hover {
     color: red;
 }
 .menu .show .show a{
-     color: black;
+    color: black;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    text-transform: initial;
  }
 .menu .show .show a:hover{
     color: red;
+}
+.menu  .dropdown-menu.show {
+    display: block;
+    margin-top: 17px;
 }
 nav ul.inner-ul li a:hover { 
 	color: #333;
