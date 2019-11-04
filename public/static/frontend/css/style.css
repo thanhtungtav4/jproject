@@ -2746,7 +2746,9 @@ h4 {
     font-size: 14px;
     line-height: 16px;
 }
-
+.map_box .container .row{
+    padding: 0 15px;
+}
 div#carousel-example-1z {
     width: 100%;
 }
