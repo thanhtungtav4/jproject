@@ -69,6 +69,20 @@ a.dropdown-toggle::after{
     padding-top: 20px;
 }
 @media all and (min-width: 992px) {
+    .menu li:hover .dropdown-menu {
+        display: block;
+    }
+    .menu li div.dropdown-menu a {
+        color: black;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        text-transform: initial;
+    }
+    .menu li div.dropdown-menu a:hover {
+        color: red;
+    }
     .href-a {
         padding-right: 0 !important;
         padding-bottom: 0;

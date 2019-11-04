@@ -31,7 +31,6 @@ if (window.innerWidth > 992){
             $(this).removeClass('show');
         }
     });
-
 }
 $(document).ready(function () {
     $('.btn-dropdown-toggle').click(function () {
