@@ -56,5 +56,11 @@
 
 @endsection
 @section('after_script')
-
+<script src="{{asset('static/frontend/js/ekko-lightbox.js')}}"></script>
+<script type="text/javascript">
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+    });
+</script>
 @endsection
