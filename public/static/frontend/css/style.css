@@ -2705,6 +2705,7 @@ h4 {
     margin-top: 24px;
     font-size: 18px;
     color: black;
+    min-height: 46px;
 }
 .text_banner_animation{
     font-style: normal;
