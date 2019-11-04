@@ -484,8 +484,9 @@ nav a:hover {
     display: block;
 }
 .icon_next::before{
-    content: url("images/icon-business/next.png");
+    content: url("../images/icon-business/next-icon.png");
     color: red;
+    margin: 5px;
 }
 nav ul.inner-ul li a:hover { 
 	color: #333;
@@ -500,7 +501,9 @@ nav ul ul {
     background: #fff;
     padding: 10px;
 }
-	
+.icon_next{
+    color: red;
+}
 /* Display Dropdowns on Hover */
 nav ul li:hover > ul {
 	display:inherit;
