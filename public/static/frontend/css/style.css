@@ -2401,9 +2401,7 @@ header .nav-link {
     display: flex;
     align-items: center;
 }
-.magin_box_flow{
-    margin-right: 30px;
-}
+
 #numberx {
     border: 1px solid #1A25BD;
     background: #1A25BD;
@@ -2823,6 +2821,9 @@ div#carousel-example-1z {
     }
     .txt_h1 {
         top: 60%;
+    }
+    .magin_box_flow{
+        margin-right: 30px;
     }
 }
 @media screen and (max-width: 600px) {
