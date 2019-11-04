@@ -2863,6 +2863,10 @@ div#carousel-example-1z {
         bottom: 10%;
         font-size: 16px;
     }
+    h4 {
+        font-size: 15px;
+        line-height: 1.5;
+    }
 }
 @media screen and (max-width: 500px){
     .home_box .icon_box {
