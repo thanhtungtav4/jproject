@@ -2290,7 +2290,11 @@ a:hover , .read_more:hover p , .footer_box_ul li:hover a{
     margin-left: 20px;
 }
 .business_item {
-    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #E0E0E0;
+}
+.business_item:last-child{
+    border-bottom: unset;
 }
 .box_solution{
     width: fit-content;
