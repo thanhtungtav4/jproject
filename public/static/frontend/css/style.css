@@ -2056,8 +2056,20 @@ a.move-top {
 .tRight {
     text-align: right;
 }
+#about .row .title-h1{
+    margin-left: 0;
+}
 .magin-top-nt{
     padding-top: 15px;
+}
+.business_item ul li{
+    list-style: none;
+}
+.business_item ul li:before {
+    position: absolute;
+    content: url(../images/icon-business/ellipse.png);
+    color: red;
+    left: 4px;
 }
 a.move-top span{
     color: #fff;
@@ -2296,7 +2308,7 @@ a:hover , .read_more:hover p , .footer_box_ul li:hover a{
 }
 .business_box ul{
     list-style: unset;
-    margin-left: 20px;
+    margin-left: 0px;
 }
 .business_item {
     padding-bottom: 20px;
