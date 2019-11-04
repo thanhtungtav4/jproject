@@ -2423,6 +2423,7 @@ header .nav-link {
     font-weight: normal;
     font-size: 1.1rem;
     line-height: 1.4;
+    padding-left: 15px;
 }
 .copyMainEn {
     margin-bottom: 18px;
