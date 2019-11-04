@@ -71,6 +71,7 @@ a.dropdown-toggle::after{
 @media all and (min-width: 992px) {
     .menu li:hover .dropdown-menu {
         display: block;
+        width: 300px;
     }
     .menu li div.dropdown-menu a {
         color: black;
@@ -79,6 +80,7 @@ a.dropdown-toggle::after{
         font-weight: normal;
         font-size: 16px;
         text-transform: initial;
+        white-space : initial;
     }
     .menu li div.dropdown-menu a:hover {
         color: red;
