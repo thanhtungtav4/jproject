@@ -50,7 +50,7 @@ a.dropdown-toggle::after{
 .hidden-box-solution p {
     font-family: Roboto;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 500;
     font-size: 15px;
     line-height: 23px;
     color: #FFFFFF;
