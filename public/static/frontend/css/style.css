@@ -481,13 +481,14 @@ nav a:hover {
 }
 .menu  .dropdown-menu.show {
     display: block;
-    margin-top: 17px;
+}
+.icon_next::before{
+    content: url("images/icon-business/next.png");
+    color: red;
 }
 nav ul.inner-ul li a:hover { 
 	color: #333;
 }
-
-
 /* Hide Dropdowns by Default
  * and giving it a position of absolute */
 nav ul ul {
