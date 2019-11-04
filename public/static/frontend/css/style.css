@@ -479,6 +479,7 @@ nav a:hover {
 .menu .show .show a:hover{
     color: red;
 }
+
 .menu  .dropdown-menu.show {
     display: block;
 }
