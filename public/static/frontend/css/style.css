@@ -2721,7 +2721,7 @@ h4 {
 }
 .border_bottom_home_home {
     border-bottom: 2.5px solid red;
-    max-width: 50px;
+    max-width: 100px;
     margin: 0 auto;
     padding-top: 10px;
 }
