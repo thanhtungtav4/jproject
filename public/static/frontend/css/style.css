@@ -2093,9 +2093,12 @@ a.move-top span{
     margin-top: 3rem;
 }
 .btn_contact{
-    background: #ffffff;
     color: red;
-    border: 1px solid red;
+    background: #FFFFFF;
+    border: 2px solid #F22D2D;
+    box-sizing: border-box;
+    width: 200px;
+    font-weight: bold;
 }
 .text_extra{
     margin: 0.8rem 0;
