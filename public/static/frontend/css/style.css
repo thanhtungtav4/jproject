@@ -2728,6 +2728,9 @@ h4 {
 .mgBL img{
     width: 100%;
 }
+.table-bordered thead th, .table-bordered thead td {
+    min-width: 125px;
+}
 .img-center{
     text-align: center;
 }
