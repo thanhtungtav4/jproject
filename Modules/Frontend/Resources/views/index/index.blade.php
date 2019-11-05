@@ -1,4 +1,6 @@
 @extends('frontend::layouts.master') @section('title', $page[getValueByLang('page_title_')]) @section('content')
+    <!-- slider -->
+    <!-- slider -->
     <!-- Header -->
     @if(!empty($data['solution-list']))
         <div class="banner" id="home">
