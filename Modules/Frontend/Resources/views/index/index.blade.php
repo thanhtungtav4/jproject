@@ -3,11 +3,11 @@
     @if(!empty($data['solution-list']))
         <div class="banner" id="home">
             <div class="text_home">
-                <p class="text_banner">{{ $dataShareConfig['wellcome_line_1'][getValueByLang('')] }}</p>
-                <div class="box_text_banner">
-                    <div>
-                        <span class="text_banner_animation">{{$dataShareConfig['wellcome_line_2'][getValueByLang('')] }}</span></div>
-                </div>
+                <p class="text_banner">{{ $dataShareConfig['wellcome_line_1'][getValueByLang('')] }} {{$dataShareConfig['wellcome_line_2'][getValueByLang('')] }}</p>
+                {{--<div class="box_text_banner">--}}
+                    {{--<div>--}}
+                        {{--<span class="text_banner_animation">{{$dataShareConfig['wellcome_line_2'][getValueByLang('')] }}</span></div>--}}
+                {{--</div>--}}
                 <div class="border_bottom_home_home"></div>
                 <section class="home_box">
                     <section class="main_content">
