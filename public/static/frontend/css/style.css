@@ -2097,7 +2097,7 @@ a.move-top span{
     background: #FFFFFF;
     border: 2px solid #F22D2D;
     box-sizing: border-box;
-    width: 200px;
+    min-width: 200px;
     font-weight: bold;
 }
 .text_extra{
