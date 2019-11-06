@@ -40,11 +40,11 @@
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="{{route('frontend.solution_'.Config::get('app.locale'))}}#tab_51">@lang('frontend::index.factory')</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="{{route('frontend.solution_'.Config::get('app.locale'))}}#tab_53">@lang('frontend::index.renewable_energy')</a>
+                            <a class="dropdown-item" href="{{route('frontend.solution_'.Config::get('app.locale'))}}#tab_52">@lang('frontend::index.renewable_energy')</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="{{route('frontend.solution_'.Config::get('app.locale'))}}#tab_52">@lang('frontend::index.service_company')</a>
+                            <a class="dropdown-item" href="{{route('frontend.solution_'.Config::get('app.locale'))}}#tab_53">@lang('frontend::index.service_company')</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="{{route('frontend.solution_'.Config::get('app.locale'))}}#tab_53">@lang('frontend::index.equipment_renewal')</a>
+                            <a class="dropdown-item" href="{{route('frontend.solution_'.Config::get('app.locale'))}}#tab_54">@lang('frontend::index.equipment_renewal')</a>
                         </div>
                     </li>
                     <li class=""><a class="href-a" href="{{route('frontend.works_'.Config::get('app.locale'))}}">@lang('frontend::index.works')</a></li>
