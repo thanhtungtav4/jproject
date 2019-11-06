@@ -111,10 +111,14 @@
         //     $( 'ul.nav a[href="' + hash + '"]' ).click();
         //
         // })
-        $('.dropdown-item').bind('click',function () {
-            var hash = window.location.hash;
-            $( 'ul.nav a[href="' + hash + '"]' ).click();
+        $(document).ready(function () {
+            $('.dropdown-item').bind('click',function () {
+                var hash = window.location.hash;
+                $( 'ul.nav a[href="' + hash + '"]' ).click();
+            })
         })
+        var hash = window.location.hash;
+        $( 'ul.nav a[href="' + hash + '"]' ).click();
         // show is solution
         // $(document).on('click', '[data-toggle="lightbox"]', function(event) {
         //     event.preventDefault();
