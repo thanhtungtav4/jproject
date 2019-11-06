@@ -58,9 +58,11 @@
                         </a>
                         <button class="nav-link dropdown-toggle btn-dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="{{route('frontend.maintenance_'.Config::get('app.locale'))}}#contractdetails">@lang('frontend::index.contract_details')</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="{{route('frontend.maintenance_'.Config::get('app.locale'))}}#contractprocessflow">@lang('frontend::index.contract_process_flow')</a>
+                            <div class="child-menu-dropdown">
+                                <a class="dropdown-item" href="{{route('frontend.maintenance_'.Config::get('app.locale'))}}#contractdetails">@lang('frontend::index.contract_details')</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="{{route('frontend.maintenance_'.Config::get('app.locale'))}}#contractprocessflow">@lang('frontend::index.contract_process_flow')</a>
+                            </div>
                         </div>
                     </li>
                     <li class=""><a class="href-a {{request()->route()->getName() == 'frontend.about.contact_vi' || request()->route()->getName() == 'frontend.about.contact_en' ? "red" :"" }}" href="{{route('frontend.about.contact_'.Config::get('app.locale'))}}">@lang('frontend::index.Inquiries')</a></li>
