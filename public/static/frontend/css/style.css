@@ -564,7 +564,13 @@ li > a:only-child:after { content: ''; }
 	nav { 
 		float: none;
 	}
-
+    .main_content .nav-item .nav-link {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 140%;
+    }
 	div#logo {
 		float: none;
 	}
@@ -2797,6 +2803,9 @@ h4 {
 }
 .map_box .container .row{
     padding: 0 15px;
+}
+#about .table tbody tr th:nth-child(1) {
+    font-weight: unset;
 }
 div#carousel-example-1z {
     width: 100%;
