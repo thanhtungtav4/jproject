@@ -105,20 +105,14 @@
                 scrollTop : 0                       // Scroll to top of body
             }, 500);
         });
-
-        // $(document).ready(function () {
-        //     var hash = window.location.hash;
-        //     $( 'ul.nav a[href="' + hash + '"]' ).click();
-        //
-        // })
-        $(document).ready(function () {
-            $('.dropdown-item').bind('click',function () {
-                var hash = window.location.hash;
-                $( 'ul.nav a[href="' + hash + '"]' ).click();
-            })
-        })
         var hash = window.location.hash;
         $( 'ul.nav a[href="' + hash + '"]' ).click();
+        $(document).ready(function () {
+            $(window).on('hashchange', function () {
+                var hash = window.location.hash;
+                $( 'ul.nav a[href="' + hash + '"]' ).click();
+            }).trigger('hashchange');
+        });
         // show is solution
         // $(document).on('click', '[data-toggle="lightbox"]', function(event) {
         //     event.preventDefault();
