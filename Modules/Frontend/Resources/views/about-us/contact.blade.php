@@ -55,8 +55,9 @@
                     </form>
                 </div>
             </section>
+            <hr class="hr-contact-us">
             <section class="map_contact container">
-                <div class="map_box">
+                <div class="map_box fix_map_box">
                     {!! $dataShareConfig['map_value_iframe'][getValueByLang('')] !!}
                 </div>
                 <p class="map_icon_contact"> {{$dataShareConfig['main_company'][getValueByLang('')]}}</p>

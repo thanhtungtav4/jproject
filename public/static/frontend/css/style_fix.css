@@ -74,7 +74,17 @@ a.dropdown-toggle::after{
 .red {
     color: red;
 }
+.fix_map_box {
+    margin: 0;
+}
+.map_contact {
+    padding: 0;
+}
 @media all and (min-width: 992px) {
+    .hr-contact-us {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
     .child-nav {
         padding-left: 30px;
     }
