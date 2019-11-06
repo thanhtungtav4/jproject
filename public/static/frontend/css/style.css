@@ -2928,6 +2928,9 @@ div#carousel-example-1z {
         margin-left: 3.5em;
         font-size: 1.1rem;
     }
+    .about .bottom_about{
+        border-bottom: unset;
+    }
 }
 @media screen and (max-width: 500px){
     .home_box .icon_box {
