@@ -2954,6 +2954,16 @@ div#carousel-example-1z {
     .container .title-h1 {
         margin-left: 0;
     }
+    .padding_section {
+        padding: 30px 15px;
+    }
+    .ul_padding_20 {
+        padding-left: 1.5rem !important;
+    }
+    .areaListHalf li {
+        float: left;
+        width: unset !important;
+    }
 }
 @media screen and (max-width: 425px) {
     .icon_box .item_icon {
