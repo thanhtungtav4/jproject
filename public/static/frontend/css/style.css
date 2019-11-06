@@ -810,6 +810,9 @@ h3.b-w3ltxt {
     padding: 0 1em;
     text-align: center;
 }
+.magin_top_btn{
+    margin-top: 20px;
+}
 .footer_box_ul{
     text-align: right;
 }
