@@ -10,7 +10,7 @@
                 <ul class="menu mt-2 ml-auto">
                     <li class="nav-item dropdown">
 {{--                        <a class="href-a nav-link dropdown-toggle" href="{{route('frontend.company_'.Config::get('app.locale'))}}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">--}}
-                        <a class="href-a" href="{{route('frontend.company_'.Config::get('app.locale'))}}">
+                        <a class="href-a {{request()->route()->getName() == 'frontend.company_vi' || request()->route()->getName() == 'frontend.company_en' ? "red" :"" }}" href="{{route('frontend.company_'.Config::get('app.locale'))}}" >
                             @lang('frontend::index.corporateprofile')
                         </a>
                         <button class="nav-link dropdown-toggle btn-dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
@@ -25,9 +25,9 @@
                             <a class="dropdown-item" href="{{route('frontend.company_'.Config::get('app.locale'))}}#policy">@lang('frontend::index.policy')</a>
                         </div>
                     </li>
-                    <li class=""><a class="href-a" href="{{route('frontend.business_'.Config::get('app.locale'))}}">@lang('frontend::index.business_outline')</a></li>
+                    <li class=""><a class="href-a {{request()->route()->getName() == 'frontend.business_vi' || request()->route()->getName() == 'frontend.business_en' ? "red" :"" }}" href="{{route('frontend.business_'.Config::get('app.locale'))}}">@lang('frontend::index.business_outline')</a></li>
                     <li class="nav-item dropdown">
-                        <a class="href-a nav-link dropdown-toggle" href="{{route('frontend.solution-cat_'.Config::get('app.locale'))}}">
+                        <a class="href-a nav-link dropdown-toggle {{request()->route()->getName() == 'frontend.solution-cat_vi' || request()->route()->getName() == 'frontend.solution-cat_en' || request()->route()->getName() == 'frontend.solution_vi' || request()->route()->getName() == 'frontend.solution_en' ? "red" :"" }}" href="{{route('frontend.solution-cat_'.Config::get('app.locale'))}}">
                             @lang('frontend::index.solution')
                         </a>
                         <button class="nav-link dropdown-toggle btn-dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
@@ -47,9 +47,9 @@
                             <a class="dropdown-item" href="{{route('frontend.solution_'.Config::get('app.locale'))}}#tab_54">@lang('frontend::index.equipment_renewal')</a>
                         </div>
                     </li>
-                    <li class=""><a class="href-a" href="{{route('frontend.works_'.Config::get('app.locale'))}}">@lang('frontend::index.works')</a></li>
+                    <li class=""><a class="href-a {{request()->route()->getName() == 'frontend.works_vi' || request()->route()->getName() == 'frontend.works_en' ? "red" :"" }}" href="{{route('frontend.works_'.Config::get('app.locale'))}}">@lang('frontend::index.works')</a></li>
                     <li class="nav-item dropdown">
-                        <a class="href-a nav-link dropdown-toggle" href="{{route('frontend.maintenance_'.Config::get('app.locale'))}}">
+                        <a class="href-a nav-link dropdown-toggle {{request()->route()->getName() == 'frontend.maintenance_vi' || request()->route()->getName() == 'frontend.maintenance_en' ? "red" :"" }}" href="{{route('frontend.maintenance_'.Config::get('app.locale'))}}">
                             @lang('frontend::index.maintenance')
                         </a>
                         <button class="nav-link dropdown-toggle btn-dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
@@ -59,7 +59,7 @@
                             <a class="dropdown-item" href="{{route('frontend.maintenance_'.Config::get('app.locale'))}}#contractprocessflow">@lang('frontend::index.contract_process_flow')</a>
                         </div>
                     </li>
-                    <li class=""><a class="href-a" href="{{route('frontend.about.contact_'.Config::get('app.locale'))}}">@lang('frontend::index.Inquiries')</a></li>
+                    <li class=""><a class="href-a {{request()->route()->getName() == 'frontend.about.contact_vi' || request()->route()->getName() == 'frontend.about.contact_en' ? "red" :"" }}" href="{{route('frontend.about.contact_'.Config::get('app.locale'))}}">@lang('frontend::index.Inquiries')</a></li>
                 </ul>
 
         </nav>

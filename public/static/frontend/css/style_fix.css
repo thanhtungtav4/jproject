@@ -71,6 +71,9 @@ a.dropdown-toggle::after{
 .bold-text {
     font-weight: bold !important;
 }
+.red {
+    color: red;
+}
 @media all and (min-width: 992px) {
     .child-nav {
         padding-left: 30px;
