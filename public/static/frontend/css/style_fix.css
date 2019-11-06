@@ -103,12 +103,22 @@ a.dropdown-toggle::after{
     }
 
     .dropdown-menu {
-        /*top: 70%;*/
-        top: 100%;
+        top: 70%;
+        /*top: 100%;*/
+        background: transparent;
+        border: none;
     }
     .btn-dropdown-toggle {
         padding-left: 0 !important;
     }
+
+    .child-menu-dropdown{
+        margin-top: 10px;
+        background: #fff;
+        padding-top: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+    }
+
 }
 @media all and (max-width : 991px) {
     .btn-dropdown-toggle:focus{

@@ -15,14 +15,16 @@
                         </a>
                         <button class="nav-link dropdown-toggle btn-dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="{{route('frontend.company_'.Config::get('app.locale'))}}#about"> @lang('frontend::index.history')</a>
-                            {{--//Corporate Profile & History--}}
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="{{route('frontend.company_'.Config::get('app.locale'))}}#greeting">@lang('frontend::index.greeting')</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item tab-link" href="{{route('frontend.company_'.Config::get('app.locale'))}}#offices">@lang('frontend::index.offices')</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="{{route('frontend.company_'.Config::get('app.locale'))}}#policy">@lang('frontend::index.policy')</a>
+                            <div class="child-menu-dropdown">
+                                <a class="dropdown-item" href="{{route('frontend.company_'.Config::get('app.locale'))}}#about"> @lang('frontend::index.history')</a>
+                                {{--//Corporate Profile & History--}}
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="{{route('frontend.company_'.Config::get('app.locale'))}}#greeting">@lang('frontend::index.greeting')</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item tab-link" href="{{route('frontend.company_'.Config::get('app.locale'))}}#offices">@lang('frontend::index.offices')</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="{{route('frontend.company_'.Config::get('app.locale'))}}#policy">@lang('frontend::index.policy')</a>
+                            </div>
                         </div>
                     </li>
                     <li class=""><a class="href-a {{request()->route()->getName() == 'frontend.business_vi' || request()->route()->getName() == 'frontend.business_en' ? "red" :"" }}" href="{{route('frontend.business_'.Config::get('app.locale'))}}">@lang('frontend::index.business_outline')</a></li>
@@ -32,19 +34,21 @@
                         </a>
                         <button class="nav-link dropdown-toggle btn-dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="{{route('frontend.solution_'.Config::get('app.locale'))}}#tab_43">@lang('frontend::index.air_conditioning')</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="{{route('frontend.solution_'.Config::get('app.locale'))}}#tab_44">@lang('frontend::index.energy_saving')</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="{{route('frontend.solution_'.Config::get('app.locale'))}}#tab_45">@lang('frontend::index.system_riCS')</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="{{route('frontend.solution_'.Config::get('app.locale'))}}#tab_51">@lang('frontend::index.factory')</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="{{route('frontend.solution_'.Config::get('app.locale'))}}#tab_52">@lang('frontend::index.renewable_energy')</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="{{route('frontend.solution_'.Config::get('app.locale'))}}#tab_53">@lang('frontend::index.service_company')</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="{{route('frontend.solution_'.Config::get('app.locale'))}}#tab_54">@lang('frontend::index.equipment_renewal')</a>
+                            <div class="child-menu-dropdown">
+                                <a class="dropdown-item" href="{{route('frontend.solution_'.Config::get('app.locale'))}}#tab_43">@lang('frontend::index.air_conditioning')</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="{{route('frontend.solution_'.Config::get('app.locale'))}}#tab_44">@lang('frontend::index.energy_saving')</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="{{route('frontend.solution_'.Config::get('app.locale'))}}#tab_45">@lang('frontend::index.system_riCS')</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="{{route('frontend.solution_'.Config::get('app.locale'))}}#tab_51">@lang('frontend::index.factory')</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="{{route('frontend.solution_'.Config::get('app.locale'))}}#tab_52">@lang('frontend::index.renewable_energy')</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="{{route('frontend.solution_'.Config::get('app.locale'))}}#tab_53">@lang('frontend::index.service_company')</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="{{route('frontend.solution_'.Config::get('app.locale'))}}#tab_54">@lang('frontend::index.equipment_renewal')</a>
+                            </div>
                         </div>
                     </li>
                     <li class=""><a class="href-a {{request()->route()->getName() == 'frontend.works_vi' || request()->route()->getName() == 'frontend.works_en' ? "red" :"" }}" href="{{route('frontend.works_'.Config::get('app.locale'))}}">@lang('frontend::index.works')</a></li>
