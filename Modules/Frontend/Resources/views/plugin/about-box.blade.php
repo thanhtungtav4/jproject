@@ -10,7 +10,7 @@
                     <p class="text_service">{!! $data[0][getValueByLang('plugin_title_')] !!}</p>
                     <p class="text_service_bold">{!! $data[0][getValueByLang('plugin_content_')] !!}</p>
                     <div class="border_bottom_home"></div>
-                    <p class="text_extra">{!! $data[0][getValueByLang('plugin_content_other_')] !!}</p>
+                    {{--<p class="text_extra">{!! $data[0][getValueByLang('plugin_content_other_')] !!}</p>--}}
                     <a class="btn btn_contact" href="{{route('frontend.maintenance_'.Config::get('app.locale'))}}">{{ __('Nhấn vào đây để xem chi tiết') }}</a>
                 </div>
             </div>

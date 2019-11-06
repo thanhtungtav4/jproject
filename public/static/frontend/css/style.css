@@ -806,7 +806,7 @@ h3.b-w3ltxt {
 }
 
 .dental img {
-    max-width: 80%;
+    width: 100%;
     padding: 0 1em;
     text-align: center;
 }
