@@ -2962,7 +2962,7 @@ div#carousel-example-1z {
     }
     .areaListHalf li {
         float: left;
-        width: unset;
+        width: unset !important;
     }
 }
 @media screen and (max-width: 425px) {
