@@ -2914,6 +2914,7 @@ div#carousel-example-1z {
     .title_img_home {
         bottom: 10%;
         font-size: 16px;
+        max-width: 294px;
     }
     h4 {
         font-size: 15px !important;
