@@ -2958,7 +2958,7 @@ div#carousel-example-1z {
         padding: 30px 15px;
     }
     .ul_padding_20 {
-        padding-left: 1.5rem;
+        padding-left: 1.5rem !important;
     }
     .areaListHalf li {
         float: left;
