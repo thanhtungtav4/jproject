@@ -26,6 +26,6 @@ interface PageRepositoryInterface
      */
     public function getCurrentPageByAlias(array $filters);
 
-    public function getSolutionList($filter);
+    public function getSolutionList();
     public function getPluginType($filter);
 }

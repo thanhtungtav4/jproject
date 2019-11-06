@@ -52,9 +52,9 @@ class PageRepository implements PageRepositoryInterface
         return collect($this->mDBA->getCurrentPage($filters))->first();
     }
 
-    public function getSolutionList($filter)
+    public function getSolutionList()
     {
-        return $this->mDBA->getListSolution($filter);
+        return $this->mDBA->getListSolution();
     }
 
     public function getPluginType($filter)
