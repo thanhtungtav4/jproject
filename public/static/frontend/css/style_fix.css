@@ -80,6 +80,43 @@ a.dropdown-toggle::after{
 .map_contact {
     padding: 0;
 }
+.image-text {
+    position: absolute;
+    top: 25%;
+    left: 36%;
+}
+.image-title {
+    position: absolute;
+    top: 50%;
+    left: 38%;
+}
+@media all and (max-width: 1686px) {
+    .image-text {
+        top: 20%;
+        left: 33%;
+    }
+    .image-title {
+        top: 50%;
+        left: 35%;
+    }
+}
+
+@media all and (max-width: 1426px) {
+    .image-text {
+        top: 20%;
+        left: 35%;
+        width: 33%;
+    }
+    .image-title {
+        top: 50%;
+        left: 37%;
+        width: 30%;
+    }
+    .carousel-home {
+        margin-top: 90px;
+    }
+}
+
 @media all and (min-width: 992px) {
     .hr-contact-us {
         margin-top: 30px;
@@ -127,6 +164,10 @@ a.dropdown-toggle::after{
         background: #fff;
         padding-top: 10px;
         border: 1px solid rgba(0, 0, 0, 0.15);
+    }
+
+    .carousel-home {
+        margin-top: 70px;
     }
 
 }
@@ -203,8 +244,33 @@ a.dropdown-toggle::after{
         color: red;
         float: right;
     }
+
+    /*.image-text {*/
+    /*    top: 35%;*/
+    /*    left: 10%;*/
+    /*    !*width: 80%;*!*/
+    /*}*/
+    /*.image-title {*/
+    /*    top: 49%;*/
+    /*    left: 17%;*/
+    /*    width: 66%;*/
+    /*}*/
+
 }
 
+
+@media all and (max-width : 450px) {
+    .image-text {
+        top: 35%;
+        left: 10%;
+        width: 80%;
+    }
+    .image-title {
+        top: 49%;
+        left: 17%;
+        width: 66%;
+    }
+}
 @media all and (max-width : 320px) {
     .menu {
         top: 13%;

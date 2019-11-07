@@ -55,9 +55,28 @@ class PageTable extends BaseModel
 
     public function getListSolution()
     {
-//        $oSelect = $this->whereIn('page_id',$id)->get();
         $oSelect = $this->where('page_type', 'solution-list')
                     ->orWhere('page_type', 'solution-list-child')->get();
         return $oSelect;
+
+//        $oSelect = $this
+//            ->join('tpcloud_cms_category as category','category.id','tpcloud_cms_page.category_id')
+//            ->where('category.parent_id',4)
+//            ->orWhere('category.id',4)
+//            ->where('page_type', 'solution-list')
+//            ->orWhere('page_type', 'solution-list-child')
+//            ->get();
+//
+//        if (count($oSelect) > 0) {
+//            foreach ($oSelect as $key => $value) {
+//                $result[$value['category_id']][] = $value;
+//            }
+//        }
+//
+//        dd($result);
+
+
+        return $oSelect;
+
     }
 }

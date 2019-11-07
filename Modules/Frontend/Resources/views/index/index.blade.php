@@ -2,6 +2,38 @@
     <!-- slider -->
     <!-- slider -->
     <!-- Header -->
+    <div id="carouselExampleIndicators" class="carousel slide carousel-home" data-ride="carousel">
+        <ol class="carousel-indicators" style="bottom: 0px;">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100 img-slider" src="/images/slider.png" alt="First slide">
+                <img class="image-text" src="/images/text.png" alt="First slide">
+                <img class="image-title" src="/images/title.png" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100 img-slider" src="/images/slider.png" alt="Second slide">
+                <img class="image-text" src="/images/text.png" alt="First slide">
+                <img class="image-title" src="/images/title.png" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100 img-slider" src="/images/slider.png" alt="Third slide">
+                <img class="image-text" src="/images/text.png" alt="First slide">
+                <img class="image-title" src="/images/title.png" alt="First slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
     @if(!empty($data['solution-list']))
         <div class="banner" id="home">
             <div class="text_home">
@@ -102,4 +134,12 @@
         </div>
     </section>
     <!-- !map-->
+@endsection
+
+@section('after_script')
+    <script type="text/javascript">
+        if (window.innerWidth < 450){
+            $('.img-slider').attr('src','/images/slider_mobile.png');
+        }
+    </script>
 @endsection

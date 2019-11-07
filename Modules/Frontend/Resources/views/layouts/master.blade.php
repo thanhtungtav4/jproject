@@ -111,6 +111,13 @@
             $(window).on('hashchange', function () {
                 var hash = window.location.hash;
                 $( 'ul.nav a[href="' + hash + '"]' ).click();
+
+                // var tmpHash = hash;
+                // tmpHash = tmpHash.replace('#','');
+                // $('body,html').animate({
+                //     scrollTop: $("#"+tmpHash).offset().top
+                // }, 800);
+
             }).trigger('hashchange');
         });
         // show is solution
